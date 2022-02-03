@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap");
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  font-family: "Cinzel", serif;
+  font-size: 1.6rem;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+h2,
+h1 {
+  margin: 0;
+  padding: 0;
+}
+.page__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000000;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: #000000;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.header__logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  margin-left: 1.5rem;
+}
+.header__logo {
+  font-size: 2.2rem;
+}
+.logo__img {
+  width: 40px;
+}
+.header__nav {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+li {
+  display: inline-block;
+  padding: 1rem;
+  cursor: pointer;
+}
+li:hover {
+  font-weight: 600;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.intro_text {
+  margin-top: 0px;
+  font-size: 12vw;
+  text-align: center;
+}
+.components__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3.2rem;
+  width: 90%;
+  margin: auto auto;
+}
+.component__card {
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  max-height: 250px;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid #000000;
+  border-radius: 12px;
+}
+.component__card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+.component__title {
+  width: 100%;
+  text-align: center;
+  font-size: 2.3rem;
+  padding: 5px 0;
+  border-radius: 12px 12px 0 0;
+  border-bottom: 1px solid #000000;
+}
+.component__card:hover .component__title {
+  font-weight: 600;
+}
+.component__img-container {
+  height: 20rem;
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.component__img {
+  max-width: 22rem;
+  max-height: 18rem;
+}
