@@ -97,7 +97,7 @@ li:hover {
   color: #000000;
 }
 @media only screen and (max-width: 365px) {
-  .main__title{
+  .main__title {
     font-size: 5rem;
   }
 }
