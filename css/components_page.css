@@ -63,14 +63,14 @@ li {
 li:hover {
   font-weight: 600;
 }
-.main-content {
+.main__content {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
 }
-.intro_text {
+.intro__text {
   margin-top: 0px;
   font-size: 12vw;
   text-align: center;
@@ -83,6 +83,7 @@ li:hover {
   gap: 3.2rem;
   width: 90%;
   margin: auto auto;
+  padding: 2rem;
 }
 .component__card {
   display: flex;
