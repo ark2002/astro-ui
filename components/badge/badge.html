@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="A design system for enterprise-level products. Clean HTML with component classes .Customizable and theme able.">
+  <title>Badge | Astro UI</title>
+  <link rel="stylesheet" href="/main.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<div class="page__container flex--column">
+  <header class="header flex--row">
+    <a href="/index.html">
+      <div class="header__logo-container flex--row">
+        <img src="/assests/zodiaclogo.png" alt="AtroUI logo" class="logo__img" />
+        <h2 class="header__logo">Astro UI</h2>
+      </div>
+    </a>
+    <nav class="header_nav flex--row">
+      <ul>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="/components_page.html">Components</a></li>
+        <li><a href="https://github.com/ark2002/astro-ui">Github</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <div class="badge__demo">
+      <span class="badge__demo-txt">Text with badge</span>
+      <span class="badge badge--position">1</span>
+    </div>
+    <div class="badge__demo">
+      <span class="badge__demo-txt">Text with Large badge</span>
+      <span class="badge badge--large badge--position">2</span>
+    </div>
+    <div class="badge__demo">
+      <span class="badge__demo-txt">Button with a badge on the left</span>
+      <span class="badge badge--position">3</span>
+      <button class="badge__demo-btn">Action</button>
+    </div>
+    <div class="badge__demo">
+      <span class="badge__demo-txt">Button toggles badge visibility</span>
+      <button class="badge__demo-btn">Action</button>
+      <span class="badge badge--position">4</span>
+    </div>
+    <div class="badge__demo">
+      <span class="badge__txt">Icon with badge</span>
+      <span class="material-icons">home</span>
+      <span class="badge badge--position">5</span>
+    </div>
+</div>
+</body>
+
+</html>

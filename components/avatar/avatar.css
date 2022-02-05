@@ -1,0 +1,62 @@
+.avatar-basic__demo {
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+.avatar {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.avatar__img {
+  width: 5.7rem;
+  height: 5.7rem;
+  border-radius: 50%;
+}
+.avatar__txt {
+  font-family: var(--primary-font-family);
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 50%;
+}
+.material-icons.avatar__icon {
+  font-size: 4rem;
+  padding: 1rem;
+  border-radius: 50%;
+  color: var(--white-color);
+  background-color: var(--secondary-color);
+}
+.status-circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 2px solid var(--white-color);
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+.offline {
+  background-color: var(--offline-color);
+}
+.online {
+  background-color: var(--online-color);
+}
+.busy {
+  background-color: var(--busy-color);
+}
+.notification {
+  background-color: var(--notif-color);
+  text-align: center;
+  font-family: var(--secondary-font-family);
+  font-weight: 600;
+  color: var(--white-color);
+}
+.avatar--stacked {
+  margin-left: -30px;
+  border: 0.2rem solid var(--white-color);
+  border-radius: 50%;
+}
