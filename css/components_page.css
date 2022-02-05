@@ -122,12 +122,12 @@ li:hover {
   max-height: 18rem;
 }
 @media only screen and (max-width: 405px) {
-  .header {
+  .header{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .header__nav {
-    margin: auto auto;
+  .header__nav{
+    margin:auto auto;
   }
 }

@@ -1,5 +1,4 @@
 .avatar-basic__demo {
-  display: flex;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
@@ -10,8 +9,8 @@
   position: relative;
 }
 .avatar__img {
-  width: 57px;
-  height: 57px;
+  width: 5.7rem;
+  height: 5.7rem;
   border-radius: 50%;
 }
 .avatar__txt {
