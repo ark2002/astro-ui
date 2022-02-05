@@ -11,8 +11,8 @@
   font-size: 2rem;
   background-color: var(--primary-color);
   border-color: transparent;
-  padding: 5px 10px;
-  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
   color: var(--white-color);
   cursor: pointer;
 }
@@ -25,16 +25,16 @@
   background-color: var(--secondary-color);
   color: var(--white-color);
   font-size: 1.6rem;
-  padding: 2.5px 8px;
+  padding: 0.25rem 0.8rem;
   border-radius: 50%;
   position: absolute;
 }
 
 .badge--large {
   font-size: 2.2rem;
-  padding: 2.5px 10px;
+  padding: 0.25rem 1rem;
 }
 
 .badge--position {
-  margin: -10px;
+  margin: -1rem;
 }
