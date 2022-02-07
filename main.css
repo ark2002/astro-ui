@@ -28,6 +28,8 @@
   --alert-primarycolor-error: #d14343;
   --alert-secondarycolor-error: #fdf4f4;
 
+  --link-color:#0000ff;
+
   --primary-font-family: "Cinzel", serif;
   --secondary-font-family: "Montserrat", sans-serif;
 }
