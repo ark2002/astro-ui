@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+    content="A design system for enterprise-level products. Clean HTML with component classes .Customizable and theme able." />
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="icon" type="image/x-icon" href="/assests/favicon.ico" />
+    <title>Astro UI | Cards</title>
+  </head>
+  <body>
+    <div class="page__container flex--column">
+      <header class="header flex--row">
+        <a href="/index.html">
+          <div class="header__logo-container flex--row">
+            <img src="/assests/zodiaclogo.png" alt="AtroUI logo" class="logo__img" />
+            <h2 class="header__logo">Astro UI</h2>
+          </div>
+        </a>
+        <nav class="header_nav flex--row">
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="/components_page.html">Components</a></li>
+            <li><a href="https://github.com/ark2002/astro-ui">Github</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="card__container flex--column">
+    <!-- basic -->
+    <p class="documentation">Basic Card</p>
+    <div class="card flex--column">
+      <div class="card--hover flex--column">
+        <div class="card__aside">
+          <div class="card__figure">
+            <img src="https://picsum.photos/350/200" alt="picsum image" class="card__image" />
+          </div>
+        </div>
+        <div class="card__header">
+          <h1 class="card__title">Card Template</h1>
+          <h3 class="card__subtitle">by Aryak Lahane</h3>
+        </div>
+        <div class="card__body">
+          <p class="card__copy flex--column">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+            incidunt facilis eligendi numquam odio aspernatur commodi fugiat
+            amet nemo ad!
+          </p>
+        </div>
+      </div>
+      <div class="card__footer">
+        <div class="card__actions flex--row">
+          <button class="card__txtbtn">Read</button>
+          <button class="card__txtbtn">Bookmark</button>
+          <button class="card__iconbtn" title="like">
+            <span class="material-icons">favorite_outline</span>
+          </button>
+          <button class="card__iconbtn" title="share">
+            <span class="material-icons"> share </span>
+          </button>
+          <button class="card__iconbtn" title="more options">
+            <span class="material-icons"> more_vert </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- basic with badge -->
+    <p class="documentation">Card with Badge</p>
+    <div class="card flex--column">
+      <div class="card--hover flex--column">
+        <div class="card__aside">
+          <div class="card__figure">
+            <img src="https://picsum.photos/350/200" alt="picsum image" class="card__image" />
+            <span class="card__badge">new!!</span>
+          </div>
+        </div>
+        <div class="card__header">
+          <h1 class="card__title">Card Template</h1>
+          <h3 class="card__subtitle">by Aryak Lahane</h3>
+        </div>
+        <div class="card__body">
+          <p class="card__copy flex--column">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+            incidunt facilis eligendi numquam odio aspernatur commodi fugiat
+            amet nemo ad!
+          </p>
+        </div>
+      </div>
+      <div class="card__footer">
+        <div class="card__actions flex--row">
+          <button class="card__txtbtn">Read</button>
+          <button class="card__txtbtn">Bookmark</button>
+          <button class="card__iconbtn" title="like">
+            <span class="material-icons">favorite_outline</span>
+          </button>
+          <button class="card__iconbtn" title="share">
+            <span class="material-icons"> share </span>
+          </button>
+          <button class="card__iconbtn" title="more options">
+            <span class="material-icons"> more_vert </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- closable card -->
+    <p class="documentation">Closeable Card</p>
+    <div class="card flex--column">
+      <div class="card--hover flex--column">
+        <div class="card__aside">
+          <div class="card__figure">
+            <img src="https://picsum.photos/350/200" alt="picsum image" class="card__image" />
+            <span class="material-icons card__close" title="close">close</span>
+          </div>
+        </div>
+        <div class="card__header">
+          <h1 class="card__title">Card Template</h1>
+          <h3 class="card__subtitle">by Aryak Lahane</h3>
+        </div>
+        <div class="card__body">
+          <p class="card__copy flex--column">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+            incidunt facilis eligendi numquam odio aspernatur commodi fugiat
+            amet nemo ad!
+          </p>
+        </div>
+      </div>
+      <div class="card__footer">
+        <div class="card__actions flex--row">
+          <button class="card__txtbtn">Read</button>
+          <button class="card__txtbtn">Bookmark</button>
+          <button class="card__iconbtn" title="like">
+            <span class="material-icons">favorite_outline</span>
+          </button>
+          <button class="card__iconbtn" title="share">
+            <span class="material-icons"> share </span>
+          </button>
+          <button class="card__iconbtn" title="more options">
+            <span class="material-icons"> more_vert </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- only icons -->
+    <p class="documentation">Card with only icons</p>
+    <div class="card flex--column">
+      <div class="card--hover flex--column">
+        <div class="card__aside">
+          <div class="card__figure">
+            <img src="https://picsum.photos/350/200" alt="picsum image" class="card__image" />
+          </div>
+        </div>
+        <div class="card__header">
+          <h1 class="card__title">Card Template</h1>
+          <h3 class="card__subtitle">by Aryak Lahane</h3>
+        </div>
+        <div class="card__body">
+          <p class="card__copy flex--column">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+            incidunt facilis eligendi numquam odio aspernatur commodi fugiat
+            amet nemo ad!
+          </p>
+        </div>
+      </div>
+      <div class="card__footer">
+        <div class="card__actions flex--row">
+          <button class="card__txtbtn card__only-iconbtn">Read</button>
+          <button class="card__txtbtn card__only-iconbtn">Bookmark</button>
+          <button class="card__iconbtn" title="like">
+            <span class="material-icons">favorite_outline</span>
+          </button>
+          <button class="card__iconbtn" title="share">
+            <span class="material-icons"> share </span>
+          </button>
+          <button class="card__iconbtn" title="more options">
+            <span class="material-icons"> more_vert </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- only button -->
+    <p class="documentation">Card with only buttons</p>
+    <div class="card flex--column">
+      <div class="card--hover flex--column">
+        <div class="card__aside">
+          <div class="card__figure">
+            <img src="https://picsum.photos/350/200" alt="picsum image" class="card__image" />
+          </div>
+        </div>
+        <div class="card__header">
+          <h1 class="card__title">Card Template</h1>
+          <h3 class="card__subtitle">by Aryak Lahane</h3>
+        </div>
+        <div class="card__body">
+          <p class="card__copy flex--column">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+            incidunt facilis eligendi numquam odio aspernatur commodi fugiat
+            amet nemo ad!
+          </p>
+        </div>
+      </div>
+      <div class="card__footer">
+        <div class="card__actions flex--row">
+          <button class="card__txtbtn">Read</button>
+          <button class="card__txtbtn">Bookmark</button>
+          <button class="card__iconbtn card__only-txtbtn" title="like">
+            <span class="material-icons">favorite_outline</span>
+          </button>
+          <button class="card__iconbtn card__only-txtbtn" title="share">
+            <span class="material-icons"> share </span>
+          </button>
+          <button class="card__iconbtn card__only-txtbtn" title="more options">
+            <span class="material-icons"> more_vert </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- card with header -->
+    <p class="documentation">Card with header at the top</p>
+    <div class="card flex--column">
+      <div class="card--hover flex--column">
+        <div class="card__aside card__with-header">
+          <div class="card__figure">
+            <img src="https://picsum.photos/350/200" alt="picsum image" class="card__image" />
+          </div>
+        </div>
+        <div class="card__header card__with-header">
+          <h1 class="card__title">Card Template</h1>
+          <h3 class="card__subtitle">by Aryak Lahane</h3>
+        </div>
+        <div class="card__body card__with-header">
+          <p class="card__copy flex--column">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+            incidunt facilis eligendi numquam odio aspernatur commodi fugiat
+            amet nemo ad!
+          </p>
+        </div>
+      </div>
+      <div class="card__footer">
+        <div class="card__actions flex--row">
+          <button class="card__txtbtn">Read</button>
+          <button class="card__txtbtn">Bookmark</button>
+          <button class="card__iconbtn" title="like">
+            <span class="material-icons">favorite_outline</span>
+          </button>
+          <button class="card__iconbtn" title="share">
+            <span class="material-icons"> share </span>
+          </button>
+          <button class="card__iconbtn" title="more options">
+            <span class="material-icons"> more_vert </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- txt over img -->
+    <p class="documentation">Card with text over image</p>
+    <div class="card flex--column">
+      <div class="card--hover flex--column">
+        <div class="card__aside">
+          <div class="card__figure">
+            <img src="https://picsum.photos/350/200" alt="picsum image" class="card__image" />
+          </div>
+        </div>
+        <div class="card__header card__txt-over-img">
+          <h1 class="card__title">Card Template</h1>
+          <h3 class="card__subtitle">by Aryak Lahane</h3>
+        </div>
+        <div class="card__body">
+          <p class="card__copy flex--column">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+            incidunt facilis eligendi numquam odio aspernatur commodi fugiat
+            amet nemo ad!
+          </p>
+        </div>
+      </div>
+      <div class="card__footer">
+        <div class="card__actions flex--row">
+          <button class="card__txtbtn">Read</button>
+          <button class="card__txtbtn">Bookmark</button>
+          <button class="card__iconbtn" title="like">
+            <span class="material-icons">favorite_outline</span>
+          </button>
+          <button class="card__iconbtn" title="share">
+            <span class="material-icons"> share </span>
+          </button>
+          <button class="card__iconbtn" title="more options">
+            <span class="material-icons"> more_vert </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- horizontal -->
+    <p class="documentation">Horizontal Card</p>
+    <div class="card flex--column">
+      <div class="card--hover flex--row">
+        <div class="card__aside">
+          <div class="card__figure card__horizontal">
+            <img src="https://picsum.photos/350/200" alt="picsum image" class="card__image" />
+          </div>
+        </div>
+        <div class="card__header">
+          <h1 class="card__title">Card Template</h1>
+          <h3 class="card__subtitle">by Aryak Lahane</h3>
+        </div>
+        <div class="card__body card__horizontal">
+          <p class="card__copy flex--column">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+            incidunt facilis eligendi numquam odio aspernatur commodi fugiat
+            amet nemo ad!
+          </p>
+        </div>
+      </div>
+      <div class="card__footer">
+        <div class="card__actions flex--row">
+          <button class="card__txtbtn">Read</button>
+          <button class="card__txtbtn">Bookmark</button>
+          <button class="card__iconbtn" title="like">
+            <span class="material-icons">favorite_outline</span>
+          </button>
+          <button class="card__iconbtn" title="share">
+            <span class="material-icons"> share </span>
+          </button>
+          <button class="card__iconbtn" title="more options">
+            <span class="material-icons"> more_vert </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- text only card -->
+    <p class="documentation">Text only Card</p>
+    <div class="card flex--column">
+      <div class="card--hover flex--column">
+        <div class="card__aside">
+          <div class="card__figure card__text-only">
+            <img src="https://picsum.photos/350/200" alt="picsum image" class="card__image" />
+          </div>
+        </div>
+        <div class="card__header">
+          <h1 class="card__title">Card Template</h1>
+          <h3 class="card__subtitle">by Aryak Lahane</h3>
+        </div>
+        <div class="card__body">
+          <p class="card__copy flex--column">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+            incidunt facilis eligendi numquam odio aspernatur commodi fugiat
+            amet nemo ad!
+          </p>
+        </div>
+      </div>
+      <div class="card__footer">
+        <div class="card__actions flex--row">
+          <button class="card__txtbtn">Read</button>
+          <button class="card__txtbtn">Bookmark</button>
+          <button class="card__iconbtn" title="like">
+            <span class="material-icons">favorite_outline</span>
+          </button>
+          <button class="card__iconbtn" title="share">
+            <span class="material-icons"> share </span>
+          </button>
+          <button class="card__iconbtn" title="more options">
+            <span class="material-icons"> more_vert </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+</body>
+
+</html>
