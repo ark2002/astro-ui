@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A design system for enterprise-level products. Clean HTML with component classes .Customizable and theme able."
+    />
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="icon" type="image/x-icon" href="/assests/favicon.ico" />
+    <title>Astro UI | Inputs</title>
+  </head>
+  <body>
+    <div class="page__container flex--column">
+      <header class="header flex--row">
+        <a href="/index.html">
+          <div class="header__logo-container flex--row">
+            <img
+              src="/assests/zodiaclogo.png"
+              alt="AtroUI logo"
+              class="logo__img"
+            />
+            <h2 class="header__logo">Astro UI</h2>
+          </div>
+        </a>
+        <nav class="header_nav flex--row">
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="/components_page.html">Components</a></li>
+            <li><a href="https://github.com/ark2002/astro-ui">Github</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="input__demo flex--column">
+        <p class="documentation">Basic Input</p>
+        <div class="form__input flex--row">
+          <input
+            type="input"
+            class="input__txt"
+            placeholder="Name"
+            name="name"
+            id="name"
+            required
+          />
+        </div>
+        <p class="documentation">Basic Input with Icon</p>
+        <div class="form__input flex--row">
+          <input
+            type="input"
+            class="input__txt"
+            placeholder="Name"
+            name="name"
+            id="name"
+            required
+          />
+          <span class="material-icons md-16 input__icon">search</span>
+        </div>
+        <p class="documentation">Focused Inputs</p>
+        <div class="form__input flex--row input--focused">
+          <input
+            type="input"
+            class="input__txt input--focused"
+            placeholder="Name"
+            name="name"
+            id="name"
+            required
+          />
+        </div>
+        <div class="form__input flex--row input--focused">
+          <input
+            type="input"
+            class="input__txt input--focused"
+            placeholder="Name"
+            name="name"
+            id="name"
+            required
+          />
+          <span class="material-icons md-16 input__icon">search</span>
+        </div>
+        <p class="documentation">Input Validator : Successful</p>
+        <div class="form__input flex--row">
+          <input
+            type="input"
+            class="input__txt input--valid"
+            placeholder="Aloo baloo"
+            name="name"
+            id="name"
+            required
+          />
+        </div>
+        <p class="form__label label--valid">Valid! Log-in Successful</p>
+        <p class="documentation">Input Validator : Unsuccesful</p>
+        <div class="form__input flex--row ">
+          <input
+            type="input"
+            class="input__txt input--invalid"
+            placeholder="Aloo baloo"
+            name="name"
+            id="name"
+            required
+          />
+        </div>
+        <p class="form__label label--invalid">InValid! Try again later</p>
+      </div>
+    </div>
+  </body>
+</html>
