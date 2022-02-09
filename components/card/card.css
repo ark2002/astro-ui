@@ -1,0 +1,172 @@
+.card__container{
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.card {
+  background-color: var(--white-color);
+  font-family: var(--secondary-font-family);
+  max-width: 35rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 1rem -0.5rem var(--black-color);
+  margin: 2rem;
+  position: relative;
+}
+.card__figure {
+  flex-basis: 60%;
+  width: 100%;
+  height: 100%;
+}
+.card__image {
+  border-radius: 0.5rem 0.5rem 0 0;
+  width: 100%;
+  height: 100%;
+}
+.card__header {
+  padding: 0 1rem 0 1rem;
+  width: inherit;
+}
+.card__title {
+  font-family: var(--primary-font-family);
+  font-size: 2.7rem;
+  margin-bottom: 0rem;
+}
+.card_subtitle {
+  margin-top: 0rem;
+  font-size: 1rem;
+}
+.card__body {
+  padding: 1rem 0.2rem 1rem 0.2rem;
+}
+.card__copy {
+  flex-basis: 40%;
+  margin: 0rem 1rem 0rem 1rem;
+  font-size: 1.6rem;
+}
+.card--hover:hover .card__header,
+.card--hover:hover .card__aside,
+.card--hover:hover .card__body {
+  cursor: pointer;
+  background-color: var(--hover-color);
+}
+.card--hover:hover img {
+  opacity: 0.9;
+}
+.card__actions {
+  margin: 0rem 0rem 0.5rem 0rem;
+  align-content: center;
+  justify-content: space-around;
+  flex-basis: 10%;
+}
+.card__txtbtn {
+  background-color: inherit;
+  border: transparent;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  font-weight: bolder;
+  cursor: pointer;
+  padding: 1rem;
+}
+.card__txtbtn:hover {
+  background-color: var(--hover-color);
+  border-radius: 0.5rem;
+}
+.card__iconbtn {
+  background-color: transparent;
+  border: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.card__iconbtn:hover {
+  background-color: var(--hover-color);
+}
+/* card with badge */
+.card__badge {
+  font-size: 1.5rem;
+  margin-left: -0.5rem;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  position: absolute;
+  left: 0%;
+  top: 2%;
+  box-shadow: 0.2rem 0.2rem 0.5rem var(--primary-color);
+  
+}
+
+/* closeable card */
+.card__close{
+  color:var(--white-color);
+  background-color: var(--secondary-color);
+  padding: 0.5rem;
+  position: absolute;
+  right:-0.5rem;
+  top:-0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.2rem var(--black-color);
+}
+.card__close:hover{
+  background-color: var(--primary-color);
+}
+
+/* card with only buttons/icons */
+
+.card__only-iconbtn,
+.card__only-txtbtn {
+  visibility: hidden;
+}
+
+/* card with header */
+.card__header.card__with-header {
+  order: 1;
+}
+.card__aside.card__with-header {
+  order: 2;
+}
+.card__body.card__with-header {
+  order: 3;
+}
+.card--hover:hover .card__header.card__with-header {
+  cursor: initial;
+  background-color: var(--white-color);
+}
+
+/* card with text over image */
+
+.card__txt-over-img {
+  position: absolute;
+  top: 11rem;
+  color: var(--white-color);
+}
+.card--hover:hover .card__header.card__txt-over-img {
+  background-color: transparent;
+}
+
+/* horizontal card */
+.card__figure.card__horizontal img {
+  border-radius: 0.5rem 0.5rem 0 0;
+  width: 11rem;
+  height: 11rem;
+}
+.card__body.card__horizontal {
+  display: none;
+}
+/* text-only-card */
+.card__text-only{
+  display:none;
+}
+
+
+/* media query */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  html {
+    font-size: 35%;
+  }
+}
