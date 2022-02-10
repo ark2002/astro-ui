@@ -1,0 +1,14 @@
+.image__demo {
+  align-items: center;
+  width: 100%;
+  gap:2rem;
+}
+.responsive__image {
+  width: 80%;
+  max-width: 80rem;
+}
+.circular__image {
+  width: 80%;
+  max-width: 40rem;
+  border-radius: 50%;
+}

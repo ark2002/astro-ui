@@ -1,0 +1,42 @@
+.form__label {
+  font-size: 1.6rem;
+}
+.input__demo{
+    gap:1rem;
+    padding: 2rem;
+}
+.form__input {
+  position: relative;
+  align-items: center;
+  width: fit-content;
+  color: var(--gray-color);
+}
+.input__txt {
+  border: 0.1rem solid var(--gray-color);
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  padding: 1rem;
+  outline: none;
+}
+.input__icon {
+  position: absolute;
+  right: 5%;
+}
+.input--focused {
+  border-color: var(--input-focused);
+  color: var(--black-color)
+}
+.input--valid{
+  border-color:var(--input-primarycolor-valid);
+  background-color:var(--input-secondarycolor-valid)
+}
+.label--valid{
+  color: var(--online-color);
+}
+.input--invalid{
+    border-color:var(--input-primarycolor-invalid);
+    background-color: var(--input-secondarycolor-invalid)
+}
+.label--invalid{
+  color: var(--busy-color);
+}
