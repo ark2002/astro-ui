@@ -1,0 +1,23 @@
+.rating {
+  align-items: center;
+  padding-left: 2rem;
+}
+.rating__star {
+  color: var(--star-unrated);
+  padding: 0.5rem;
+}
+.star--selected {
+  color: var(--star-rated);
+}
+.rating__background > .star--selected {
+  background-color: var(--star-rated-bg);
+}
+.material-icons.star--small {
+  font-size: 1.5rem;
+}
+.material-icons.star--medium {
+  font-size: 2rem;
+}
+.material-icons.star--large {
+  font-size: 3rem;
+}
