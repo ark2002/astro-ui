@@ -8,10 +8,12 @@
   <meta name="description"
     content="A design system for enterprise-level products. Clean HTML with component classes .Customizable and theme able.">
   <link rel="stylesheet" href="/main.css" />
+  <link rel="stylesheet" href="/documentation/prism.css">
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
   <title>Badge | Astro UI</title>
 </head>
-<div class="page__container flex--column">
+
+<body>
   <header class="header flex--row">
     <a href="/index.html">
       <div class="header__logo-container flex--row">
@@ -21,14 +23,17 @@
     </a>
     <nav class="header__nav flex--row">
       <ul>
-        <li><a href="#">Documentation</a></li>
+        <li><a href="/documentation.html">Documentation</a></li>
         <li><a href="/components_page.html">Components</a></li>
         <li><a href="https://github.com/ark2002/astro-ui">Github</a></li>
       </ul>
     </nav>
   </header>
-
-  <body>
+  <div class="page__container flex--column">
+    <div class="page__header">
+      <h1 class="primary__font heading1 text-align--center">Badge</h1>
+      <p class="secondary__font">Badges are used to inform user of the status of specific data.</p>
+    </div>
     <div class="badge__demo">
       <span class="badge__demo-txt">Text with badge</span>
       <span class="badge badge--position">1</span>
@@ -52,7 +57,31 @@
       <span class="material-icons">home</span>
       <span class="badge badge--position">5</span>
     </div>
-</div>
+    <pre class="docs__code"><code class="language-html">&ltdiv class="badge__demo"&gt
+  &ltspan class="badge__demo-txt"&gtText with badge&lt/span&gt
+  &ltspan class="badge badge--position"&gt1&lt/span&gt
+&lt/div&gt
+&ltdiv class="badge__demo"&gt
+  &ltspan class="badge__demo-txt"&gtText with Large badge&lt/span&gt
+  &ltspan class="badge badge--large badge--position"&gt2&lt/span&gt
+&lt/div&gt
+&ltdiv class="badge__demo"&gt
+  &ltspan class="badge__demo-txt"&gtButton with a badge on the left&lt/span&gt
+  &ltspan class="badge badge--position"&gt3&lt/span&gt
+  &ltbutton class="badge__demo-btn"&gtAction&lt/button&gt
+&lt/div&gt
+&ltdiv class="badge__demo"&gt
+  &ltspan class="badge__demo-txt"&gtButton toggles badge visibility&lt/span&gt
+  &ltbutton class="badge__demo-btn"&gtAction&lt/button&gt
+  &ltspan class="badge badge--position"&gt4&lt/span&gt
+&lt/div&gt
+&ltdiv class="badge__demo"&gt
+  &ltspan class="badge__txt"&gtIcon with badge&lt/span&gt
+  &ltspan class="material-icons"&gthome&lt/span&gt
+  &ltspan class="badge badge--position"&gt5&lt/span&gt
+&lt/div&gt</code></pre>
+  </div>
+  <script src="/documentation/prism.js"></script>
 </body>
 
 </html>

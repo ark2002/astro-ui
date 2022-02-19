@@ -1,89 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A design system for enterprise-level products. Clean HTML with component classes .Customizable and theme able."
-    />
-    <link rel="stylesheet" href="/main.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <title>Navbar | Astro UI</title>
-  </head>
 
-  <body>
-    <div class="page__container flex--column">
-      <header class="header flex--row">
-        <a href="/index.html">
-          <div class="header__logo-container flex--row">
-            <img
-              src="/assets/zodiaclogo.png"
-              alt="AtroUI logo"
-              class="logo__img"
-            />
-            <h2 class="header__logo">Astro UI</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="A design system for enterprise-level products. Clean HTML with component classes .Customizable and theme able." />
+  <link rel="stylesheet" href="/main.css" />
+  <link rel="stylesheet" href="/documentation/prism.css">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <title>Navbar | Astro UI</title>
+</head>
+
+<body>
+  <header class="header flex--row">
+    <a href="/index.html">
+      <div class="header__logo-container flex--row">
+        <img src="/assets/zodiaclogo.png" alt="AtroUI logo" class="logo__img" />
+        <h2 class="header__logo">Astro UI</h2>
+      </div>
+    </a>
+    <nav class="header__nav flex--row">
+      <ul>
+        <li><a href="/documentation.html">Documentation</a></li>
+        <li><a href="/components_page.html">Components</a></li>
+        <li><a href="https://github.com/ark2002/astro-ui">Github</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="navbar__demo flex--column">
+    <div class="page__header">
+      <h1 class="primary__font heading1 text-align--center">Navbar</h1>
+      <p class="secondary__font">Navbar is used to show a navigation bar on the top of the page.</p>
+    </div>
+    <p class="documentation">Basic Navbar</p>
+    <div class="navbar__wrapper flex--row">
+      <div class="navbar__container flex--row">
+        <a href="">
+          <div class="navbar__logo-container flex--row">
+            <img src="/assets/zodiaclogo.png" alt="logo image" class="navbar__logo-img" />
+            <h2 class="navbar__logo">Logo Name</h2>
           </div>
         </a>
-        <nav class="header__nav flex--row">
+        <nav class="navbar__nav flex--row">
           <ul>
-            <li><a href="#">Documentation</a></li>
-            <li><a href="/components_page.html">Components</a></li>
-            <li><a href="https://github.com/ark2002/astro-ui">Github</a></li>
+            <li><a href="">Option 1</a></li>
+            <li><a href="">option 2</a></li>
+            <li><a href="">option 3</a></li>
           </ul>
         </nav>
-      </header>
-      <div class="navbar__demo flex--column">
-        <p class="documentation">Basic Navbar</p>
-        <div class="navbar__wrapper flex--row">
-        <div class="navbar__container flex--row">
-          <a href="">
-            <div class="navbar__logo-container flex--row">
-              <img
-                src="/assets/zodiaclogo.png"
-                alt="logo image"
-                class="navbar__logo-img"
-              />
-              <h2 class="navbar__logo">Logo Name</h2>
-            </div>
-          </a>
-          <nav class="navbar__nav flex--row">
-            <ul>
-              <li><a href="">Option 1</a></li>
-              <li><a href="">option 2</a></li>
-              <li><a href="">option 3</a></li>
-            </ul>
-          </nav>
-        </div>
-        </div>
-        <p class="documentation">E-commerce Navbar</p>
-        <div class="navbar__wrapper">
-        <div class="navbar__container flex--row">
-          <a href="">
-            <div class="navbar__logo-container flex--row">
-              <img
-                src="/assets/zodiaclogo.png"
-                alt="logo image"
-                class="navbar__logo-img"
-              />
-              <h2 class="navbar__logo">Logo Name</h2>
-            </div>
-          </a>
-          <div class="navbar__search-container flex--row">
-            <input type="text" class="navbar__search input__txt" placeholder="Search" />
-            <button class="navbar__search-btn btn"><span class="material-icons search__btn-icon">search</span></button>
-          </div>
-          <nav class="navbar__nav flex--row">
-            <ul>
-              <li><a href=""><span class="material-icons" title="View Cart">shopping_cart</span></a></li>
-              <li><a href=""><span class="material-icons" title="View Wishlist">favorite_border</span></a></li>
-              <li><a href=""><span class="material-icons" title="Account">account_circle</span></a></li>
-            </ul>
-          </nav>
-        </div>
-        </div>
-        </div>
       </div>
-  </body>
+    </div>
+    <pre class="docs__code"><code class="language-html">&ltdiv class="navbar__wrapper flex--row"&gt
+  &ltdiv class="navbar__container flex--row"&gt
+    &lta href=""&gt
+      &ltdiv class="navbar__logo-container flex--row"&gt
+        &ltimg src="/assets/zodiaclogo.png" alt="logo image" class="navbar__logo-img" /&gt
+        &lth2 class="navbar__logo"&gtLogo Name&lt/h2&gt
+      &lt/div&gt
+    &lt/a&gt
+    &ltnav class="navbar__nav flex--row"&gt
+      &ltul&gt
+        &ltli&gt&lta href=""&gtOption 1&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href=""&gtoption 2&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href=""&gtoption 3&lt/a&gt&lt/li&gt
+      &lt/ul&gt
+    &lt/nav&gt
+  &lt/div&gt
+&lt/div&gt</code></pre>
+    <p class="documentation">E-commerce Navbar</p>
+    <div class="navbar__wrapper">
+      <div class="navbar__container flex--row">
+        <a href="">
+          <div class="navbar__logo-container flex--row">
+            <img src="/assets/zodiaclogo.png" alt="logo image" class="navbar__logo-img" />
+            <h2 class="navbar__logo">Logo Name</h2>
+          </div>
+        </a>
+        <div class="navbar__search-container flex--row">
+          <input type="text" class="navbar__search input__txt" placeholder="Search" />
+          <button class="navbar__search-btn btn"><span class="material-icons search__btn-icon">search</span></button>
+        </div>
+        <nav class="navbar__nav flex--row">
+          <ul>
+            <li><a href=""><span class="material-icons" title="View Cart">shopping_cart</span></a></li>
+            <li><a href=""><span class="material-icons" title="View Wishlist">favorite_border</span></a></li>
+            <li><a href=""><span class="material-icons" title="Account">account_circle</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <pre class="docs__code"><code class="language-html">&ltdiv class="navbar__wrapper"&gt
+  &ltdiv class="navbar__container flex--row"&gt
+    &lta href=""&gt
+      &ltdiv class="navbar__logo-container flex--row"&gt
+        &ltimg src="/assets/zodiaclogo.png" alt="logo image" class="navbar__logo-img" /&gt
+        &lth2 class="navbar__logo"&gtLogo Name&lt/h2&gt
+      &lt/div&gt
+    &lt/a&gt
+    &ltdiv class="navbar__search-container flex--row"&gt
+      &ltinput type="text" class="navbar__search input__txt" placeholder="Search" /&gt
+      &ltbutton class="navbar__search-btn btn"&gt&ltspan class="material-icons search__btn-icon"&gtsearch&lt/span&gt&lt/button&gt
+    &lt/div&gt
+    &ltnav class="navbar__nav flex--row"&gt
+      &ltul&gt
+        &ltli&gt&lta href=""&gt&ltspan class="material-icons" title="View Cart"&gtshopping_cart&lt/span&gt&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href=""&gt&ltspan class="material-icons" title="View Wishlist"&gtfavorite_border&lt/span&gt&lt/a&gt&lt/li&gt
+        &ltli&gt&lta href=""&gt&ltspan class="material-icons" title="Account"&gtaccount_circle&lt/span&gt&lt/a&gt&lt/li&gt
+      &lt/ul&gt
+    &lt/nav&gt
+  &lt/div&gt
+&lt/div&gt</code></pre>
+  </div>
+  <script src="/documentation/prism.js"></script>
+</body>
+
 </html>

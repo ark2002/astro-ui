@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A design system for enterprise-level products. Clean HTML with component classes .Customizable and theme able."
-    />
-    <link rel="stylesheet" href="/main.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <title>Images | Astro UI</title>
-  </head>
-  <body>
-    <div class="page__container flex--column">
-      <header class="header flex--row">
-        <a href="/index.html">
-          <div class="header__logo-container flex--row">
-            <img
-              src="/assets/zodiaclogo.png"
-              alt="AtroUI logo"
-              class="logo__img"
-            />
-            <h2 class="header__logo">Astro UI</h2>
-          </div>
-        </a>
-        <nav class="header__nav flex--row">
-          <ul>
-            <li><a href="#">Documentation</a></li>
-            <li><a href="/components_page.html">Components</a></li>
-            <li><a href="https://github.com/ark2002/astro-ui">Github</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="image__demo flex--column">
-        <p class="documentation">Responsive Image</p>
-        <img src="https://picsum.photos/1000/400" alt="image" class="responsive__image" />
-        <p class="documentation">Circular Image</p>
-        <img
-          src="https://picsum.photos/1000/1000"
-          alt="image"
-          class="circular__image"
-        />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="A design system for enterprise-level products. Clean HTML with component classes .Customizable and theme able." />
+  <link rel="stylesheet" href="/main.css" />
+  <link rel="stylesheet" href="/documentation/prism.css">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <title>Images | Astro UI</title>
+</head>
+
+<body>
+  <header class="header flex--row">
+    <a href="/index.html">
+      <div class="header__logo-container flex--row">
+        <img src="/assets/zodiaclogo.png" alt="AtroUI logo" class="logo__img" />
+        <h2 class="header__logo">Astro UI</h2>
       </div>
+    </a>
+    <nav class="header__nav flex--row">
+      <ul>
+        <li><a href="/documentation.html">Documentation</a></li>
+        <li><a href="/components_page.html">Components</a></li>
+        <li><a href="https://github.com/ark2002/astro-ui">Github</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="image__demo flex--column">
+    <div class="page__header">
+      <h1 class="primary__font heading1 text-align--center">Images</h1>
+      <p class="secondary__font ">Images are used to display graphical media on the page</p>
     </div>
-  </body>
+    <p class="documentation">Responsive Image</p>
+    <img src="https://picsum.photos/1000/400" alt="image" class="responsive__image" />
+    <pre
+      class="docs__code"><code class="language-html">&ltimg src="https://picsum.photos/1000/400" alt="image" class="responsive__image" /&gt</code></pre>
+    <p class="documentation">Circular Image</p>
+    <img src="https://picsum.photos/1000/1000" alt="image" class="circular__image" />
+    <pre
+      class="docs__code"><code class="language-html">&ltimg src="https://picsum.photos/1000/1000" alt="image" class="circular__image" /&gt</code></pre>
+  </div>
+  <script src="/documentation/prism.js"></script>
+</body>
+
 </html>
