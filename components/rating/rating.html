@@ -1,104 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="A design system for enterprise-level products. Clean HTML with component classes .Customizable and theme able."
-    />
-    <link rel="stylesheet" href="/main.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <title>Rating | Astro UI</title>
-  </head>
-  <body>
-    <div class="page__container flex--column">
-      <header class="header flex--row">
-        <a href="/index.html">
-          <div class="header__logo-container flex--row">
-            <img
-              src="/assets/zodiaclogo.png"
-              alt="AtroUI logo"
-              class="logo__img"
-            />
-            <h2 class="header__logo">Astro UI</h2>
-          </div>
-        </a>
-        <nav class="header__nav flex--row">
-          <ul>
-            <li><a href="#">Documentation</a></li>
-            <li><a href="/components_page.html">Components</a></li>
-            <li><a href="https://github.com/ark2002/astro-ui">Github</a></li>
-          </ul>
-        </nav>
-      </header>
-      <p class="documentation">Rating star - Small</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="A design system for enterprise-level products. Clean HTML with component classes .Customizable and theme able." />
+  <link rel="stylesheet" href="/main.css" />
+  <link rel="stylesheet" href="/documentation/prism.css">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <title>Rating | Astro UI</title>
+</head>
+
+<body>
+  <header class="header flex--row">
+    <a href="/index.html">
+      <div class="header__logo-container flex--row">
+        <img src="/assets/zodiaclogo.png" alt="AtroUI logo" class="logo__img" />
+        <h2 class="header__logo">Astro UI</h2>
+      </div>
+    </a>
+    <nav class="header__nav flex--row">
+      <ul>
+        <li><a href="/documentation.html">Documentation</a></li>
+        <li><a href="/components_page.html">Components</a></li>
+        <li><a href="https://github.com/ark2002/astro-ui">Github</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="page__container flex--column">
+    <div class="page__header">
+      <h1 class="primary__font heading1 text-align--center">Rating</h1>
+      <p class="secondary__font">Rating is a set of radio buttons that allow the user to rate something.</p>
+    </div>
+    <p class="documentation">Rating star - Small</p>
     <div class="rating flex--row">
-        <span class="material-icons rating__star star--small">star_rate</span>
-        <span class="material-icons rating__star star--small">star_rate</span>
-        <span class="material-icons rating__star star--small">star_rate</span>
-        <span class="material-icons rating__star star--small">star_rate</span>
-        <span class="material-icons rating__star star--small">star_rate</span>
+      <span class="material-icons rating__star star--small">star_rate</span>
+      <span class="material-icons rating__star star--small">star_rate</span>
+      <span class="material-icons rating__star star--small">star_rate</span>
+      <span class="material-icons rating__star star--small">star_rate</span>
+      <span class="material-icons rating__star star--small">star_rate</span>
     </div>
     <div class="rating flex--row">
-        <span class="material-icons rating__star star--selected star--small">star_rate</span>
-        <span class="material-icons rating__star star--selected star--small">star_rate</span>
-        <span class="material-icons rating__star star--selected star--small">star_rate</span>
-        <span class="material-icons rating__star star--small">star_rate</span>
-        <span class="material-icons rating__star star--small">star_rate</span>
+      <span class="material-icons rating__star star--selected star--small">star_rate</span>
+      <span class="material-icons rating__star star--selected star--small">star_rate</span>
+      <span class="material-icons rating__star star--selected star--small">star_rate</span>
+      <span class="material-icons rating__star star--small">star_rate</span>
+      <span class="material-icons rating__star star--small">star_rate</span>
     </div>
     <div class="rating rating__background flex--row">
-        <span class="material-icons rating__star star--selected star--small">star_rate</span>
-        <span class="material-icons rating__star star--selected star--small">star_rate</span>
-        <span class="material-icons rating__star star--selected star--small">star_rate</span>
-        <span class="material-icons rating__star star--small">star_rate</span>
-        <span class="material-icons rating__star star--small">star_rate</span>
+      <span class="material-icons rating__star star--selected star--small">star_rate</span>
+      <span class="material-icons rating__star star--selected star--small">star_rate</span>
+      <span class="material-icons rating__star star--selected star--small">star_rate</span>
+      <span class="material-icons rating__star star--small">star_rate</span>
+      <span class="material-icons rating__star star--small">star_rate</span>
     </div>
+    <pre class="docs__code"><code class="language-html">&ltdiv class="rating flex--row"&gt
+    &ltspan class="material-icons rating__star star--small"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--small"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--small"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--small"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--small"&gtstar_rate&lt/span&gt
+&lt/div&gt
+&ltdiv class="rating flex--row"&gt
+    &ltspan class="material-icons rating__star star--selected star--small"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--selected star--small"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--selected star--small"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--small"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--small"&gtstar_rate&lt/span&gt
+&lt/div&gt
+&ltdiv class="rating rating__background flex--row"&gt
+    &ltspan class="material-icons rating__star star--selected star--small"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--selected star--small"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--selected star--small"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--small"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--small"&gtstar_rate&lt/span&gt
+&lt/div&gt</code></pre>
     <p class="documentation">Rating star - Medium</p>
     <div class="rating flex--row">
-        <span class="material-icons rating__star star--medium">star_rate</span>
-        <span class="material-icons rating__star star--medium">star_rate</span>
-        <span class="material-icons rating__star star--medium">star_rate</span>
-        <span class="material-icons rating__star star--medium">star_rate</span>
-        <span class="material-icons rating__star star--medium">star_rate</span>
+      <span class="material-icons rating__star star--medium">star_rate</span>
+      <span class="material-icons rating__star star--medium">star_rate</span>
+      <span class="material-icons rating__star star--medium">star_rate</span>
+      <span class="material-icons rating__star star--medium">star_rate</span>
+      <span class="material-icons rating__star star--medium">star_rate</span>
     </div>
     <div class="rating flex--row">
-        <span class="material-icons rating__star star--selected star--medium">star_rate</span>
-        <span class="material-icons rating__star star--selected star--medium">star_rate</span>
-        <span class="material-icons rating__star star--selected star--medium">star_rate</span>
-        <span class="material-icons rating__star star--medium">star_rate</span>
-        <span class="material-icons rating__star star--medium">star_rate</span>
+      <span class="material-icons rating__star star--selected star--medium">star_rate</span>
+      <span class="material-icons rating__star star--selected star--medium">star_rate</span>
+      <span class="material-icons rating__star star--selected star--medium">star_rate</span>
+      <span class="material-icons rating__star star--medium">star_rate</span>
+      <span class="material-icons rating__star star--medium">star_rate</span>
     </div>
     <div class="rating rating__background flex--row">
-        <span class="material-icons rating__star star--selected star--medium">star_rate</span>
-        <span class="material-icons rating__star star--selected star--medium">star_rate</span>
-        <span class="material-icons rating__star star--selected star--medium">star_rate</span>
-        <span class="material-icons rating__star star--medium">star_rate</span>
-        <span class="material-icons rating__star star--medium">star_rate</span>
+      <span class="material-icons rating__star star--selected star--medium">star_rate</span>
+      <span class="material-icons rating__star star--selected star--medium">star_rate</span>
+      <span class="material-icons rating__star star--selected star--medium">star_rate</span>
+      <span class="material-icons rating__star star--medium">star_rate</span>
+      <span class="material-icons rating__star star--medium">star_rate</span>
     </div>
+    <pre class="docs__code"><code class="language-html">&ltdiv class="rating flex--row"&gt
+    &ltspan class="material-icons rating__star star--medium"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--medium"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--medium"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--medium"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--medium"&gtstar_rate&lt/span&gt
+&lt/div&gt
+&ltdiv class="rating flex--row"&gt
+    &ltspan class="material-icons rating__star star--selected star--medium"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--selected star--medium"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--selected star--medium"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--medium"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--medium"&gtstar_rate&lt/span&gt
+&lt/div&gt
+&ltdiv class="rating rating__background flex--row"&gt
+    &ltspan class="material-icons rating__star star--selected star--medium"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--selected star--medium"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--selected star--medium"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--medium"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--medium"&gtstar_rate&lt/span&gt
+&lt/div&gt</code></pre>
     <p class="documentation">Rating star - Large</p>
     <div class="rating flex--row">
-        <span class="material-icons rating__star star--large">star_rate</span>
-        <span class="material-icons rating__star star--large">star_rate</span>
-        <span class="material-icons rating__star star--large">star_rate</span>
-        <span class="material-icons rating__star star--large">star_rate</span>
-        <span class="material-icons rating__star star--large">star_rate</span>
+      <span class="material-icons rating__star star--large">star_rate</span>
+      <span class="material-icons rating__star star--large">star_rate</span>
+      <span class="material-icons rating__star star--large">star_rate</span>
+      <span class="material-icons rating__star star--large">star_rate</span>
+      <span class="material-icons rating__star star--large">star_rate</span>
     </div>
     <div class="rating flex--row">
-        <span class="material-icons rating__star star--selected star--large">star_rate</span>
-        <span class="material-icons rating__star star--selected star--large">star_rate</span>
-        <span class="material-icons rating__star star--selected star--large">star_rate</span>
-        <span class="material-icons rating__star star--large">star_rate</span>
-        <span class="material-icons rating__star star--large">star_rate</span>
+      <span class="material-icons rating__star star--selected star--large">star_rate</span>
+      <span class="material-icons rating__star star--selected star--large">star_rate</span>
+      <span class="material-icons rating__star star--selected star--large">star_rate</span>
+      <span class="material-icons rating__star star--large">star_rate</span>
+      <span class="material-icons rating__star star--large">star_rate</span>
     </div>
     <div class="rating rating__background flex--row">
-        <span class="material-icons rating__star star--selected star--large">star_rate</span>
-        <span class="material-icons rating__star star--selected star--large">star_rate</span>
-        <span class="material-icons rating__star star--selected star--large">star_rate</span>
-        <span class="material-icons rating__star star--large">star_rate</span>
-        <span class="material-icons rating__star star--large">star_rate</span>
+      <span class="material-icons rating__star star--selected star--large">star_rate</span>
+      <span class="material-icons rating__star star--selected star--large">star_rate</span>
+      <span class="material-icons rating__star star--selected star--large">star_rate</span>
+      <span class="material-icons rating__star star--large">star_rate</span>
+      <span class="material-icons rating__star star--large">star_rate</span>
     </div>
-    </div>
+    <pre class="docs__code"><code class="language-html">&ltdiv class="rating flex--row"&gt
+    &ltspan class="material-icons rating__star star--large"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--large"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--large"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--large"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--large"&gtstar_rate&lt/span&gt
+&lt/div&gt
+&ltdiv class="rating flex--row"&gt
+    &ltspan class="material-icons rating__star star--selected star--large"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--selected star--large"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--selected star--large"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--large"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--large"&gtstar_rate&lt/span&gt
+&lt/div&gt
+&ltdiv class="rating rating__background flex--row"&gt
+    &ltspan class="material-icons rating__star star--selected star--large"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--selected star--large"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--selected star--large"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--large"&gtstar_rate&lt/span&gt
+    &ltspan class="material-icons rating__star star--large"&gtstar_rate&lt/span&gt
+&lt/div&gt</code></pre>
+  </div>
+  <script src="/documentation/prism.js"></script>
 </body>
+
 </html>

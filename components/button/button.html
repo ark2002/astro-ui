@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
     content="A design system for enterprise-level products. Clean HTML with component classes .Customizable and theme able." />
-    <link rel="stylesheet" href="/main.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <title>Button | Astro UI</title>
-  </head>
-  <body>
-    <div class="page__container flex--column">
-      <header class="header flex--row">
-        <a href="/index.html">
-          <div class="header__logo-container flex--row">
-            <img src="/assets/zodiaclogo.png" alt="AtroUI logo" class="logo__img" />
-            <h2 class="header__logo">Astro UI</h2>
-          </div>
-        </a>
-        <nav class="header__nav flex--row">
-          <ul>
-            <li><a href="#">Documentation</a></li>
-            <li><a href="/components_page.html">Components</a></li>
-            <li><a href="https://github.com/ark2002/astro-ui">Github</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="btn__demo">
-      <p class="documentation">Solid Rectangular Buttons</p>
+  <link rel="stylesheet" href="/main.css" />
+  <link rel="stylesheet" href="/documentation/prism.css">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+  <title>Button | Astro UI</title>
+</head>
+
+<body>
+  <header class="header flex--row">
+    <a href="/index.html">
+      <div class="header__logo-container flex--row">
+        <img src="/assets/zodiaclogo.png" alt="AtroUI logo" class="logo__img" />
+        <h2 class="header__logo">Astro UI</h2>
+      </div>
+    </a>
+    <nav class="header__nav flex--row">
+      <ul>
+        <li><a href="/documentation.html">Documentation</a></li>
+        <li><a href="/components_page.html">Components</a></li>
+        <li><a href="https://github.com/ark2002/astro-ui">Github</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="page__container flex--column">
+    <div class="page__header">
+      <h1 class="primary__font heading1 text-align--center">Button</h1>
+      <p class="secondary__font ">Buttons allows user to take actions or make choices.</p>
+    </div>
+    <p class="documentation">Solid Rectangular Buttons</p>
     <div class="btn__basic">
       <button class="btn btn-color--primary btn-font--primary">primary</button>
       <button class="btn btn-color--secondary btn-font--primary">
@@ -47,6 +53,24 @@
         tertiary
       </button>
     </div>
+    <pre class="docs__code"><code class="language-html">&ltdiv class="btn__basic"&gt
+  &ltbutton class="btn btn-color--primary btn-font--primary"&gtprimary&lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn-font--primary"&gt
+    secondary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn-font--primary"&gt
+    tertiary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--primary btn-font--secondary"&gt
+    primary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn-font--secondary"&gt
+    secondary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn-font--secondary"&gt
+    tertiary
+  &lt/button&gt
+&lt/div&gt</code></pre>
     <p class="documentation">Solid Rounded Buttons</p>
     <div class="btn__border--radius">
       <button class="btn btn-color--primary btn-font--primary">primary</button>
@@ -66,6 +90,24 @@
         tertiary
       </button>
     </div>
+    <pre class="docs__code"><code class="language-html">&ltdiv class="btn__border--radius"&gt
+  &ltbutton class="btn btn-color--primary btn-font--primary"&gtprimary&lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn-font--primary"&gt
+    secondary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn-font--primary"&gt
+    tertiary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--primary btn-font--secondary"&gt
+    primary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn-font--secondary"&gt
+    secondary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn-font--secondary"&gt
+    tertiary
+  &lt/button&gt
+&lt/div&gt</code></pre>
     <p class="documentation">Solid Button Bullets</p>
     <div class="btn__bullets">
       <button class="btn btn-color--primary btn-font--primary">primary</button>
@@ -85,6 +127,24 @@
         tertiary
       </button>
     </div>
+    <pre class="docs__code"><code class="language-html">&ltdiv class="btn__bullets"&gt
+  &ltbutton class="btn btn-color--primary btn-font--primary"&gtprimary&lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn-font--primary"&gt
+    secondary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn-font--primary"&gt
+    tertiary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--primary btn-font--secondary"&gt
+    primary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn-font--secondary"&gt
+    secondary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn-font--secondary"&gt
+    tertiary
+  &lt/button&gt
+&lt/div&gt</code></pre>
     <p class="documentation">Outline Rectangular Buttons</p>
     <div class="btn__outline">
       <button class="btn btn-color--primary btn-font--primary">primary</button>
@@ -104,6 +164,24 @@
         tertiary
       </button>
     </div>
+    <pre class="docs__code"><code class="language-html">&ltdiv class="btn__outline"&gt
+  &ltbutton class="btn btn-color--primary btn-font--primary"&gtprimary&lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn-font--primary"&gt
+    secondary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn-font--primary"&gt
+    tertiary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--primary btn-font--secondary"&gt
+    primary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn-font--secondary"&gt
+    secondary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn-font--secondary"&gt
+    tertiary
+  &lt/button&gt
+&lt/div&gt</code></pre>
     <p class="documentation">Outline Rounded Buttons</p>
     <div class="btn__border--radius btn__outline">
       <button class="btn btn-color--primary btn-font--primary">primary</button>
@@ -123,6 +201,24 @@
         tertiary
       </button>
     </div>
+    <pre class="docs__code"><code class="language-html">&ltdiv class="btn__border--radius btn__outline"&gt
+  &ltbutton class="btn btn-color--primary btn-font--primary"&gtprimary&lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn-font--primary"&gt
+    secondary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn-font--primary"&gt
+    tertiary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--primary btn-font--secondary"&gt
+    primary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn-font--secondary"&gt
+    secondary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn-font--secondary"&gt
+    tertiary
+  &lt/button&gt
+&lt/div&gt</code></pre>
     <p class="documentation">Outline Button Bullets</p>
     <div class="btn__bullets btn__outline">
       <button class="btn btn-color--primary btn-font--primary">primary</button>
@@ -142,6 +238,24 @@
         tertiary
       </button>
     </div>
+    <pre class="docs__code"><code class="language-html">&ltdiv class="btn__bullets btn__outline"&gt
+  &ltbutton class="btn btn-color--primary btn-font--primary"&gtprimary&lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn-font--primary"&gt
+    secondary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn-font--primary"&gt
+    tertiary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--primary btn-font--secondary"&gt
+    primary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn-font--secondary"&gt
+    secondary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn-font--secondary"&gt
+    tertiary
+  &lt/button&gt
+&lt/div&gt</code></pre>
     <p class="documentation">Buttons Disabled</p>
     <div class=" btn--disabled btn__border--radius">
       <button class="btn btn-color--primary btn-font--primary" disabled>
@@ -163,6 +277,26 @@
         tertiary
       </button>
     </div>
+    <pre class="docs__code"><code class="language-html">&ltdiv class=" btn--disabled btn__border--radius"&gt
+  &ltbutton class="btn btn-color--primary btn-font--primary" disabled&gt
+    primary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn-font--primary" disabled&gt
+    secondary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn-font--primary" disabled&gt
+    tertiary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--primary btn-font--secondary" disabled&gt
+    primary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn-font--secondary" disabled&gt
+    secondary
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn-font--secondary" disabled&gt
+    tertiary
+  &lt/button&gt
+&lt/div&gt</code></pre>
     <p class="documentation">Link Buttons</p>
     <div class="btn--link">
       <button class="btn btn-font--primary">link</button>
@@ -170,6 +304,12 @@
       <button class="btn btn-font--primary" disabled>link</button>
       <button class="btn btn-font--secondary" disabled>link</button>
     </div>
+    <pre class="docs__code"><code class="language-html">&ltdiv class="btn--link"&gt
+  &ltbutton class="btn btn-font--primary"&gtlink&lt/button&gt
+  &ltbutton class="btn btn-font--secondary"&gtlink&lt/button&gt
+  &ltbutton class="btn btn-font--primary" disabled&gtlink&lt/button&gt
+  &ltbutton class="btn btn-font--secondary" disabled&gtlink&lt/button&gt
+&lt/div&gt</code></pre>
     <p class="documentation">Buttons in diffrent Sizes</p>
     <div class="btn__border--radius btn--size">
       <button class="btn btn-color--primary btn-font--primary btn--small">
@@ -191,6 +331,26 @@
         large
       </button>
     </div>
+    <pre class="docs__code"><code class="language-html">&ltdiv class="btn__border--radius btn--size"&gt
+  &ltbutton class="btn btn-color--primary btn-font--primary btn--small"&gt
+    small
+  &lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn-font--primary btn--regular"&gt
+    regular
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn-font--primary btn--large"&gt
+    large
+  &lt/button&gt
+  &ltbutton class="btn btn-color--primary btn-font--primary btn--small" disabled&gt
+    small
+  &lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn-font--primary btn--regular" disabled&gt
+    regular
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn-font--primary btn--large" disabled&gt
+    large
+  &lt/button&gt
+&lt/div&gt</code></pre>
     <p class="documentation">Rectangular Buttons with Icons</p>
     <div class="btn__icon">
       <button class="btn btn-color--primary btn--small">
@@ -211,49 +371,111 @@
       <button class="btn btn-color--tertiary btn--large" disabled>
         <span class="material-icons">close</span>
       </button>
-      <p class="documentation">Circle Buttons With Icons</p>
-      <div class="btn__icon--round">
-        <button class="btn  btn--small">
-          <span class="material-icons">search</span>
-        </button>
-        <button class="btn  btn--regular">
-          <span class="material-icons">search</span>
-        </button>
-        <button class="btn  btn--large">
-          <span class="material-icons">search</span>
-        </button>
-        <button class="btn  btn--small" disabled>
-          <span class="material-icons">search</span>
-        </button>
-        <button class="btn  btn--regular" disabled>
-          <span class="material-icons">search</span>
-        </button>
-        <button class="btn  btn--large" disabled>
-          <span class="material-icons">search</span>
-        </button>
-        <p class="documentation">Floating Buttons</p>
-      <div class="floating__btn">
-        <button class="btn btn-color--primary btn--small">
-          <span class="material-icons">add</span>
-        </button>
-        <button class="btn btn-color--secondary btn--regular">
-          <span class="material-icons">add</span>
-        </button>
-        <button class="btn btn-color--tertiary btn--large">
-          <span class="material-icons">add</span>
-        </button>
-        <button class="btn btn-color--primary btn--small" disabled>
-          <span class="material-icons">add</span>
-        </button>
-        <button class="btn btn-color--secondary btn--regular" disabled>
-          <span class="material-icons">add</span>
-        </button>
-        <button class="btn btn-color--tertiary btn--large" disabled>
-          <span class="material-icons">add</span>
-        </button>
-      </div>
-      </div>
     </div>
+    <pre class="docs__code"><code class="language-html">&ltdiv class="btn__icon"&gt
+  &ltbutton class="btn btn-color--primary btn--small"&gt
+    &ltspan class="material-icons"&gtclose&lt/span&gt
+  &lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn--regular"&gt
+    &ltspan class="material-icons"&gtclose&lt/span&gt
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn--large"&gt
+    &ltspan class="material-icons"&gtclose&lt/span&gt
+  &lt/button&gt
+  &ltbutton class="btn btn-color--primary btn--small" disabled&gt
+    &ltspan class="material-icons"&gtclose&lt/span&gt
+  &lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn--regular" disabled&gt
+    &ltspan class="material-icons"&gtclose&lt/span&gt
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn--large" disabled&gt
+    &ltspan class="material-icons"&gtclose&lt/span&gt
+  &lt/button&gt
+&lt/div&gt</code></pre>
+    <p class="documentation">Circle Buttons With Icons</p>
+    <div class="btn__icon--round">
+      <button class="btn  btn--small">
+        <span class="material-icons">search</span>
+      </button>
+      <button class="btn  btn--regular">
+        <span class="material-icons">search</span>
+      </button>
+      <button class="btn  btn--large">
+        <span class="material-icons">search</span>
+      </button>
+      <button class="btn  btn--small" disabled>
+        <span class="material-icons">search</span>
+      </button>
+      <button class="btn  btn--regular" disabled>
+        <span class="material-icons">search</span>
+      </button>
+      <button class="btn  btn--large" disabled>
+        <span class="material-icons">search</span>
+      </button>
     </div>
-  </body>
+    <pre class="docs__code"><code class="language-html">&ltdiv class="btn__icon--round"&gt
+      &ltbutton class="btn  btn--small"&gt
+        &ltspan class="material-icons"&gtsearch&lt/span&gt
+      &lt/button&gt
+  &ltbutton class="btn  btn--regular"&gt
+    &ltspan class="material-icons"&gtsearch&lt/span&gt
+  &lt/button&gt
+  &ltbutton class="btn  btn--large"&gt
+    &ltspan class="material-icons"&gtsearch&lt/span&gt
+  &lt/button&gt
+  &ltbutton class="btn  btn--small" disabled&gt
+    &ltspan class="material-icons"&gtsearch&lt/span&gt
+  &lt/button&gt
+  &ltbutton class="btn  btn--regular" disabled&gt
+    &ltspan class="material-icons"&gtsearch&lt/span&gt
+  &lt/button&gt
+  &ltbutton class="btn  btn--large" disabled&gt
+    &ltspan class="material-icons"&gtsearch&lt/span&gt
+  &lt/button&gt
+&lt/div&gt</code></pre>
+    <p class="documentation">Floating Buttons</p>
+    <div class="floating__btn">
+      <button class="btn btn-color--primary btn--small">
+        <span class="material-icons">add</span>
+      </button>
+      <button class="btn btn-color--secondary btn--regular">
+        <span class="material-icons">add</span>
+      </button>
+      <button class="btn btn-color--tertiary btn--large">
+        <span class="material-icons">add</span>
+      </button>
+      <button class="btn btn-color--primary btn--small" disabled>
+        <span class="material-icons">add</span>
+      </button>
+      <button class="btn btn-color--secondary btn--regular" disabled>
+        <span class="material-icons">add</span>
+      </button>
+      <button class="btn btn-color--tertiary btn--large" disabled>
+        <span class="material-icons">add</span>
+      </button>
+    </div>
+    <pre class="docs__code"><code class="language-html">&ltdiv class="floating__btn"&gt
+  &ltbutton class="btn btn-color--primary btn--small"&gt
+    &ltspan class="material-icons"&gtadd&lt/span&gt
+  &lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn--regular"&gt
+    &ltspan class="material-icons"&gtadd&lt/span&gt
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn--large"&gt
+    &ltspan class="material-icons"&gtadd&lt/span&gt
+  &lt/button&gt
+  &ltbutton class="btn btn-color--primary btn--small" disabled&gt
+    &ltspan class="material-icons"&gtadd&lt/span&gt
+  &lt/button&gt
+  &ltbutton class="btn btn-color--secondary btn--regular" disabled&gt
+    &ltspan class="material-icons"&gtadd&lt/span&gt
+  &lt/button&gt
+  &ltbutton class="btn btn-color--tertiary btn--large" disabled&gt
+    &ltspan class="material-icons"&gtadd&lt/span&gt
+  &lt/button&gt
+&lt/div&gt</code></pre>
+  </div>
+  <script src="/documentation/prism.js"></script>
+</body>
+
 </html>
