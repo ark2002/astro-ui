@@ -1,0 +1,89 @@
+::selection{
+    color: var(--white-color);
+    background: var(--primary-color);
+  }
+  .slider__wrapper{
+    margin: 3rem 0;
+    width: 35rem;
+    background: var(--white-color);
+    border-radius: 1rem;
+    padding: 2rem 2.5rem 4rem;
+    box-shadow: 0 1.2rem 3.5rem #0000001a;
+  }
+  .slider__inputs{
+    width: 100%;
+    margin: 3rem 0 3.5rem;
+  }
+  .slider__inputs .input__field{
+    width: 100%;
+    height: 4.5rem;
+    align-items: center;
+  }
+  .input__field input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    font-family: var(--secondary-font-family);
+    font-size: 2rem;
+    margin-left: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid var(--gray-color);
+    -moz-appearance: textinput__field;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  .slider__inputs .separator{
+    width: 13rem;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider{
+    height: 5px;
+    position: relative;
+    background: var(--secondary-color);
+    border-radius: 5px;
+  }
+  .slider .progress{
+    height: 100%;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+    border-radius: 5px;
+    background: var(--primary-color);
+  }
+  .range-input{
+    position: relative;
+  }
+  .range-input input{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  input[type="range"]::-webkit-slider-thumb{
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: 50%;
+    background: var(--primary-color);
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px #0000000d;
+  }
+  input[type="range"]::-moz-range-thumb{
+    height: 1.7rem;
+    width: 1.7rem;
+    border: none;
+    border-radius: 50%;
+    background: var(--primary-color);
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px #0000000d;
+  }

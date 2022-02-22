@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="A design system for enterprise-level products. Clean HTML with component classes .Customizable and theme able." />
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/documentation/prism.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <title>Grids | Astro UI</title>
+</head>
+
+<body>
+    <header class="header flex--row">
+        <a href="/index.html">
+            <div class="header__logo-container flex--row">
+                <img src="/assets/zodiaclogo.png" alt="AtroUI logo" class="logo__img" />
+                <h2 class="header__logo">Astro UI</h2>
+            </div>
+        </a>
+        <nav class="header__nav flex--row">
+            <ul>
+                <li><a href="/documentation.html">Documentation</a></li>
+                <li><a href="/components_page.html">Components</a></li>
+                <li><a href="https://github.com/ark2002/astro-ui">Github</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="page__container flex--column">
+        <div class="page__header">
+            <h1 class="primary__font heading1 text-align--center">Grids</h1>
+            <p class="secondary__font">The grid creates visual consistency between layouts while allowing flexibility
+                across a wide variety of designs.
+            </p>
+        </div>
+        <p class="documentation">Grids : 2 Columns</p>
+        <div class="grid__container">
+            <div class="grid grid__cols-2">
+                <div class="grid__block"></div>
+                <div class="grid__block"></div>
+            </div>
+        </div>
+
+        <pre class="docs__code"><code class="language-html">&ltdiv class="grid grid__cols-2"&gt
+    &ltdiv class="grid__block"&gt&lt/div&gt
+    &ltdiv class="grid__block"&gt&lt/div&gt
+&lt/div&gt</code></pre>
+
+        <p class="documentation">Grids : 2 Rows</p>
+        <div class="grid__container">
+            <div class="grid grid__rows-2">
+                <div class="grid__block"></div>
+                <div class="grid__block"></div>
+            </div>
+        </div>
+
+        <pre class="docs__code"><code class="language-html">&ltdiv class="grid grid__rows-2"&gt
+    &ltdiv class="grid__block"&gt&lt/div&gt
+    &ltdiv class="grid__block"&gt&lt/div&gt
+&lt/div&gt</code></pre>
+
+
+        <p class="documentation">Grids : 3 Columns</p>
+        <div class="grid__container">
+            <div class="grid grid__cols-3">
+                <div class="grid__block"></div>
+                <div class="grid__block"></div>
+                <div class="grid__block"></div>
+            </div>
+        </div>
+
+        <pre class="docs__code"><code class="language-html">&ltdiv class="grid grid__cols-3"&gt
+    &ltdiv class="grid__block"&gt&lt/div&gt
+    &ltdiv class="grid__block"&gt&lt/div&gt
+    &ltdiv class="grid__block"&gt&lt/div&gt
+&lt/div&gt</code></pre>
+
+        <p class="documentation">Grids : 3 Rows</p>
+        <div class="grid__container">
+            <div class="grid grid__rows-3">
+                <div class="grid__block"></div>
+                <div class="grid__block"></div>
+                <div class="grid__block"></div>
+            </div>
+        </div>
+
+        <pre class="docs__code"><code class="language-html">&ltdiv class="grid grid__rows-3"&gt
+    &ltdiv class="grid__block"&gt&lt/div&gt
+    &ltdiv class="grid__block"&gt&lt/div&gt
+    &ltdiv class="grid__block"&gt&lt/div&gt
+&lt/div&gt</code></pre>
+    </div>
+    <script src="/documentation/prism.js"></script>
+</body>
+
+</html>
