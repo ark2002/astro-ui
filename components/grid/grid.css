@@ -1,0 +1,33 @@
+.grid__container {
+    padding: 2rem;
+    width: 50%;
+    background-color: var(--hover-color);
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+}
+
+.grid__cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid__rows-2 {
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.grid__cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid__rows-3 {
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.grid__block {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    height: 4rem;
+}
