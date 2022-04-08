@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="A design system for enterprise-level products. Clean HTML with component classes .Customizable and theme able." />
+    <link rel="stylesheet" href="/main.css" />
+    <link rel="stylesheet" href="/documentation/prism.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <title>Lists | Astro UI</title>
+</head>
+
+<body>
+    <header class="header flex--row">
+        <a href="/index.html">
+            <div class="header__logo-container flex--row">
+                <img src="/assets/zodiaclogo.png" alt="AtroUI logo" class="logo__img" />
+                <h2 class="header__logo">Astro UI</h2>
+            </div>
+        </a>
+        <nav class="header__nav flex--row">
+            <ul>
+                <li><a href="/documentation.html">Documentation</a></li>
+                <li><a href="/components_page.html">Components</a></li>
+                <li><a href="https://github.com/ark2002/astro-ui">Github</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="list__demo flex--column">
+        <div class="page__header">
+            <h1 class="primary__font heading1 text-align--center">Lists</h1>
+            <p class="secondary__font">Lists are continuous, vertical indexes of text or images.</p>
+        </div>
+        <p class="documentation">Stacked List</p>
+        <ul class="stacked__list secondary__font text__small flex--column">
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+        </ul>
+        <pre class="docs__code"><code class="language-html">
+&ltul class="stacked__list secondary__font text__small flex--column">
+        &ltli>List Item&lt/li>
+        &ltli>List Item&lt/li>
+        &ltli>List Item&lt/li>
+        &ltli>List Item&lt/li>
+        &ltli>List Item&lt/li>
+&lt/ul>
+</code></pre>
+        <p class="documentation">Spaced List</p>
+        <ul class="spaced__list secondary__font text__small flex--column">
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+            <li>List Item</li>
+        </ul>
+        <pre class="docs__code"><code class="language-html">
+&ltul class="stacked__list secondary__font text__small flex--column">
+    &ltli>List Item&lt/li>
+    &ltli>List Item&lt/li>
+    &ltli>List Item&lt/li>
+    &ltli>List Item&lt/li>
+    &ltli>List Item&lt/li>
+&lt/ul>
+        </code></pre>
+        <p class="documentation">Notifications List</p>
+        <ul class="notifications__list">
+            <li class="notifications__list-item flex--row">
+                <img src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
+                <p class="secondary__font text__small"><b>Title: </b>Notified rn</p>
+            </li>
+            <li class="notifications__list-item flex--row">
+                <img src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
+                <p class="secondary__font text__small"><b>Title: </b>Notified rn</p>
+            </li>
+            <li class="notifications__list-item flex--row">
+                <img src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
+                <p class="secondary__font text__small"><b>Title: </b>Notified rn</p>
+            </li>
+        </ul>
+<pre class="docs__code"><code class="language-html">
+&ltul class="notifications__list">
+        &ltli class="notifications__list-item flex--row">
+            &ltimg src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
+            &ltp class="secondary__font text__small">&ltb>Title: &lt/b>Notified rn&lt/p>
+        &lt/li>
+        &ltli class="notifications__list-item flex--row">
+            &ltimg src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
+            &ltp class="secondary__font text__small">&ltb>Title: &lt/b>Notified rn&lt/p>
+        &lt/li>
+        &ltli class="notifications__list-item flex--row">
+            &ltimg src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
+            &ltp class="secondary__font text__small">&ltb>Title: &lt/b>Notified rn&lt/p>
+        &lt/li>
+&lt/ul>
+</code></pre>
+    </div>
+    <script src="/documentation/prism.js"></script>
+</body>
+
+</html>
