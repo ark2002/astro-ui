@@ -1,0 +1,35 @@
+.list__demo {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.spaced__list {
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.stacked__list>li {
+    background-color: var(--hover-color);
+    padding: 1rem;
+}
+
+.spaced__list>li {
+    background-color: var(--hover-color);
+    padding: 1rem;
+}
+
+.notifications__list-item {
+    display: table-row;
+    align-items: center;
+    height: 5rem;
+    width: 20rem;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--black-color);
+}
+
+.notifications__list-item:hover {
+    background-color: var(--hover-color);
+}
