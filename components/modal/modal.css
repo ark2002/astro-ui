@@ -1,0 +1,40 @@
+.modal__demo {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.modal__alert {
+    padding: 1rem;
+    min-width: 20rem;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: var(--hover-color);
+}
+
+.modal__choice {
+    align-items: center;
+    padding: 1rem;
+    min-width: 20rem;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: var(--hover-color);
+    gap: 2rem;
+}
+
+.modal.modal--positioned {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 9999;
+}
+
+.modal.display--none {
+    display: none;
+}
+
+.background--blur {
+    filter: opacity(20%);
+}
