@@ -29,51 +29,100 @@
             </ul>
         </nav>
     </header>
-    <div class="modal__demo flex--column" id="background">
-        <div class="page__header">
-            <h1 class="primary__font heading1 text-align--center">Modal</h1>
-            <p class="secondary__font">The modal component provides a solid foundation for creating dialogs, popovers,
-                lightboxes, or whatever else.</p>
-        </div>
+    <div class="page__container flex--row" id="background">
+        <nav class="components__sidebar flex--column">
+            <li class="sidebar__option"><a href="/components/alert/alert.html">
+                    <p class="primary__font text__small">Alerts</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/avatar/avatar.html">
+                    <p class="primary__font text__small">Avatars</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/badge/badge.html">
+                    <p class="primary__font text__small">Badges</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/button/button.html">
+                    <p class="primary__font text__small">Buttons</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/card/card.html">
+                    <p class="primary__font text__small">Cards</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/image/image.html">
+                    <p class="primary__font text__small">Images</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/input/input.html">
+                    <p class="primary__font text__small">Inputs</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/navbar/navbar.html">
+                    <p class="primary__font text__small">Navigation</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/rating/rating.html">
+                    <p class="primary__font text__small">Rating</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/typography/typography.html">
+                    <p class="primary__font text__small">Typography</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/slider/slider.html">
+                    <p class="primary__font text__small">Slider</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/grid/grid.html">
+                    <p class="primary__font text__small">Grids</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/lists/lists.html">
+                    <p class="primary__font text__small">Lists</p>
+                </a></li>
+            <li class="sidebar__option option--selected"><a href="/components/modal/modal.html">
+                    <p class="primary__font text__small">Modal</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/toast/toast.html">
+                    <p class="primary__font text__small">Toast</p>
+                </a></li>
+        </nav>
+        <div class="component__container flex--column">
+            <div class="page__header">
+                <h1 class="primary__font heading1 text-align--center">Modal</h1>
+                <p class="secondary__font">The modal component provides a solid foundation for creating dialogs,
+                    popovers,
+                    lightboxes, or whatever else.</p>
+            </div>
 
-        <p class="documentation">Alert Modal</p>
-        <button class="btn btn-color--primary btn-font--secondary text__small" id="alert-modal-demo-btn">
-            Demo
-        </button>
+            <p class="documentation">Alert Modal</p>
+            <button class="btn btn-color--primary btn-font--secondary text__small" id="alert-modal-demo-btn">
+                Demo
+            </button>
 
-        <div class="modal modal__alert secondary__font flex--column">
-            <h1 class="modal__alert__title text__small">This is a Title</h1>
-            <p class="modal__alert__subtitle text__small">This is subtitle</p>
-        </div>
+            <div class="modal modal__alert secondary__font flex--column">
+                <h1 class="modal__alert__title text__small">This is a Title</h1>
+                <p class="modal__alert__subtitle text__small">This is subtitle</p>
+            </div>
 
-        <pre class="docs__code"><code class="language-html">
+            <pre class="docs__code"><code class="language-html">
 &ltdiv class="modal modal__alert secondary__font flex--column" id="alert-modal-demo">
     &lth1 class="modal__alert__title text__small">This is a Title&lt/h1>
     &ltp class="modal__alert__subtitle text__small">This is subtitle&lt/p>
 &lt/div>
         </code></pre>
 
-        <p class="documentation">Choice Modal</p>
-        <button class="btn btn-color--primary btn-font--secondary text__small" id="choice-modal-demo-btn">
-            Demo
-        </button>
+            <p class="documentation">Choice Modal</p>
+            <button class="btn btn-color--primary btn-font--secondary text__small" id="choice-modal-demo-btn">
+                Demo
+            </button>
 
-        <div class="modal modal__choice secondary__font flex--column">
-            <div class="modal__choice__header">
-                <h1 class="modal__choice__title text__small">This is a Title</h1>
-                <p class="modal__choice__subtitle text__small">This is subtitle</p>
+            <div class="modal modal__choice secondary__font flex--column">
+                <div class="modal__choice__header">
+                    <h1 class="modal__choice__title text__small">This is a Title</h1>
+                    <p class="modal__choice__subtitle text__small">This is subtitle</p>
+                </div>
+                <div class="modal__choice__actions">
+                    <button class="btn btn-color--primary btn-font--secondary text__small">
+                        Button 1
+                    </button>
+                    <button class="btn btn-color--primary btn-font--secondary text__small">
+                        Button 2
+                    </button>
+                </div>
             </div>
-            <div class="modal__choice__actions">
-                <button class="btn btn-color--primary btn-font--secondary text__small">
-                    Button 1
-                </button>
-                <button class="btn btn-color--primary btn-font--secondary text__small">
-                    Button 2
-                </button>
-            </div>
-        </div>
 
-        <pre class="docs__code"><code class="language-html">
+            <pre class="docs__code"><code class="language-html">
 &ltdiv class="modal modal__choice secondary__font flex--column">
     &ltdiv class="modal__choice__header">
         &lth1 class="modal__choice__title text__small">This is a Title&lt/h1>
@@ -90,32 +139,33 @@
 &lt/div>  
         </code></pre>
 
-    </div>
-
-    <div class="modal modal__alert modal--positioned display--none secondary__font flex--column" id="alert-modal-demo"
-        tabindex="0">
-        <h1 class="modal__alert__title text__small">This is a Title</h1>
-        <p class="modal__alert__subtitle text__small">This is subtitle</p>
-    </div>
-
-    <div class="modal modal__choice modal--positioned secondary__font display--none flex--column" id="choice-modal-demo"
-        tabindex="0">
-        <div class="modal__choice__header">
-            <h1 class="modal__choice__title text__small">This is a Title</h1>
-            <p class="modal__choice__subtitle text__small">This is subtitle</p>
         </div>
-        <div class="modal__choice__actions">
-            <button class="btn btn-color--primary btn-font--secondary text__small">
-                Button 1
-            </button>
-            <button class="btn btn-color--primary btn-font--secondary text__small">
-                Button 2
-            </button>
         </div>
-    </div>
 
-    <script src="/documentation/prism.js"></script>
-    <script src="./modal.js"></script>
+        <div class="modal modal__alert modal--positioned display--none secondary__font flex--column"
+            id="alert-modal-demo" tabindex="0">
+            <h1 class="modal__alert__title text__small">This is a Title</h1>
+            <p class="modal__alert__subtitle text__small">This is subtitle</p>
+        </div>
+
+        <div class="modal modal__choice modal--positioned secondary__font display--none flex--column"
+            id="choice-modal-demo" tabindex="0">
+            <div class="modal__choice__header">
+                <h1 class="modal__choice__title text__small">This is a Title</h1>
+                <p class="modal__choice__subtitle text__small">This is subtitle</p>
+            </div>
+            <div class="modal__choice__actions">
+                <button class="btn btn-color--primary btn-font--secondary text__small">
+                    Button 1
+                </button>
+                <button class="btn btn-color--primary btn-font--secondary text__small">
+                    Button 2
+                </button>
+            </div>
+        </div>
+
+        <script src="/documentation/prism.js"></script>
+        <script src="./modal.js"></script>
 </body>
 
 </html>

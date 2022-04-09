@@ -8,6 +8,7 @@
   <meta name="description"
     content="A design system for enterprise-level products. Clean HTML with component classes .Customizable and theme able." />
   <link rel="stylesheet" href="/main.css" />
+  <link rel="stylesheet" href="/documentation/prism.css">
   <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
   <title>Typography | Astro UI</title>
 </head>
@@ -28,97 +29,232 @@
       </ul>
     </nav>
   </header>
-  <div class="page__container flex--column">
-    <div class="page__header">
-      <h1 class="primary__font heading1 text-align--center">Typography</h1>
-      <p class="secondary__font">Baic text variants including headings and various features types</p>
-    </div>
-    <div class="typography__wrapper flex--row">
-      <div class="primary__font">
-        <p class="documentation"><a href="https://fonts.google.com/specimen/Cinzel">Primary Font : Cinzel</a></p>
-        <div class="text__container">
-          <h1 class="heading1">Heading 1</h1>
-          <h2 class="heading2">Heading 2</h2>
-          <h3 class="heading3">Heading 3</h3>
-          <h4 class="heading4">Heading 4</h4>
-          <h5 class="heading5">Heading 5</h5>
-        </div>
-        <div class="text__container">
-          <p class="text__xlarge">Text extra-large</p>
-          <p class="text__large">Text large</p>
-          <p class="text__medium">Text medium</p>
-          <p class="text__small">Text small</p>
-          <p class="text__xsmall">Text extra-small</p>
-        </div>
-        <div class="text__container">
-          <p class="light text__medium">light</p>
-          <p class="regular text__medium">regular</p>
-          <p class="semibold text__medium">semibold</p>
-          <p class="bold text__medium">bold</p>
-          <p class="x-bold text__medium">Extra bold</p>
-        </div>
-        <div class="text__container">
-          <p class="italic text__medium">italics</p>
-          <p class="underline text__medium">underline</p>
-        </div>
-        <div class="text__container">
-          <p class="text-align--left text__medium">left-aligned</p>
-          <p class="text-align--center text__medium">center-aligned</p>
-          <p class="text-align--right text__medium">right-aligned</p>
-        </div>
-        <div class="text__container">
-          <p class="word-space--normal text__medium">normal word spacing</p>
-          <p class="word-space--more text__medium">more word spacing</p>
-        </div>
-        <div class="text__container">
-          <p class="letter-space--normal text__medium">normal letter spacing</p>
-          <p class="letter-space--more text__medium">more letter spacing</p>
-        </div>
+  <div class="page__container flex--row" id="background">
+    <nav class="components__sidebar flex--column">
+      <li class="sidebar__option"><a href="/components/alert/alert.html">
+          <p class="primary__font text__small">Alerts</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/avatar/avatar.html">
+          <p class="primary__font text__small">Avatars</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/badge/badge.html">
+          <p class="primary__font text__small">Badges</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/button/button.html">
+          <p class="primary__font text__small">Buttons</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/card/card.html">
+          <p class="primary__font text__small">Cards</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/image/image.html">
+          <p class="primary__font text__small">Images</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/input/input.html">
+          <p class="primary__font text__small">Inputs</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/navbar/navbar.html">
+          <p class="primary__font text__small">Navigation</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/rating/rating.html">
+          <p class="primary__font text__small">Rating</p>
+        </a></li>
+      <li class="sidebar__option option--selected"><a href="/components/typography/typography.html">
+          <p class="primary__font text__small">Typography</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/slider/slider.html">
+          <p class="primary__font text__small">Slider</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/grid/grid.html">
+          <p class="primary__font text__small">Grids</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/lists/lists.html">
+          <p class="primary__font text__small">Lists</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/modal/modal.html">
+          <p class="primary__font text__small">Modal</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/toast/toast.html">
+          <p class="primary__font text__small">Toast</p>
+        </a></li>
+    </nav>
+    <div class="component__container flex--column">
+      <div class="page__header">
+        <h1 class="primary__font heading1 text-align--center">Typography</h1>
+        <p class="secondary__font">Baic text variants including headings and various features types</p>
       </div>
-      <div class="secondary__font">
-        <p class="documentation"><a href="https://fonts.google.com/specimen/Montserrat">Secondary Font : Montserrat</a>
-        </p>
-        <div class="text__container">
-          <h1 class="heading1">Heading 1</h1>
-          <h2 class="heading2">Heading 2</h2>
-          <h3 class="heading3">Heading 3</h3>
-          <h4 class="heading4">Heading 4</h4>
-          <h5 class="heading5">Heading 5</h5>
+      <div class="typography__wrapper flex--row">
+        <div class="primary__font">
+          <p class="documentation"><a href="https://fonts.google.com/specimen/Cinzel">Primary Font : Cinzel</a></p>
+          <div class="text__container">
+            <h1 class="heading1">Heading 1</h1>
+            <h2 class="heading2">Heading 2</h2>
+            <h3 class="heading3">Heading 3</h3>
+            <h4 class="heading4">Heading 4</h4>
+            <h5 class="heading5">Heading 5</h5>
+          </div>
+          <div class="text__container">
+            <p class="text__xlarge">Text extra-large</p>
+            <p class="text__large">Text large</p>
+            <p class="text__medium">Text medium</p>
+            <p class="text__small">Text small</p>
+            <p class="text__xsmall">Text extra-small</p>
+          </div>
+          <div class="text__container">
+            <p class="light text__medium">light</p>
+            <p class="regular text__medium">regular</p>
+            <p class="semibold text__medium">semibold</p>
+            <p class="bold text__medium">bold</p>
+            <p class="x-bold text__medium">Extra bold</p>
+          </div>
+          <div class="text__container">
+            <p class="italic text__medium">italics</p>
+            <p class="underline text__medium">underline</p>
+          </div>
+          <div class="text__container">
+            <p class="text-align--left text__medium">left-aligned</p>
+            <p class="text-align--center text__medium">center-aligned</p>
+            <p class="text-align--right text__medium">right-aligned</p>
+          </div>
+          <div class="text__container">
+            <p class="word-space--normal text__medium">normal word spacing</p>
+            <p class="word-space--more text__medium">more word spacing</p>
+          </div>
+          <div class="text__container">
+            <p class="letter-space--normal text__medium">normal letter spacing</p>
+            <p class="letter-space--more text__medium">more letter spacing</p>
+          </div>
+          <pre class="docs__code"><code class="language-html">
+&ltdiv class="primary__font">
+&ltdiv class="text__container">
+  &lth1 class="heading1">Heading 1&lt/h1>
+  &lth2 class="heading2">Heading 2&lt/h2>
+  &lth3 class="heading3">Heading 3&lt/h3>
+  &lth4 class="heading4">Heading 4&lt/h4>
+  &lth5 class="heading5">Heading 5&lt/h5>
+&lt/div>
+&ltdiv class="text__container">
+  &ltp class="text__xlarge">Text extra-large&lt/p>
+  &ltp class="text__large">Text large&lt/p>
+  &ltp class="text__medium">Text medium&lt/p>
+  &ltp class="text__small">Text small&lt/p>
+  &ltp class="text__xsmall">Text extra-small&lt/p>
+&lt/div>
+&ltdiv class="text__container">
+  &ltp class="light text__medium">light&lt/p>
+  &ltp class="regular text__medium">regular&lt/p>
+  &ltp class="semibold text__medium">semibold&lt/p>
+  &ltp class="bold text__medium">bold&lt/p>
+  &ltp class="x-bold text__medium">Extra bold&lt/p>
+&lt/div>
+&ltdiv class="text__container">
+  &ltp class="italic text__medium">italics&lt/p>
+  &ltp class="underline text__medium">underline&lt/p>
+&lt/div>
+&ltdiv class="text__container">
+  &ltp class="text-align--left text__medium">left-aligned&lt/p>
+  &ltp class="text-align--center text__medium">center-aligned&lt/p>
+  &ltp class="text-align--right text__medium">right-aligned&lt/p>
+&lt/div>
+&ltdiv class="text__container">
+  &ltp class="word-space--normal text__medium">normal word spacing&lt/p>
+  &ltp class="word-space--more text__medium">more word spacing&lt/p>
+&lt/div>
+&ltdiv class="text__container">
+  &ltp class="letter-space--normal text__medium">normal letter spacing&lt/p>
+  &ltp class="letter-space--more text__medium">more letter spacing&lt/p>
+&lt/div>
+&lt/div>
+          </code></pre>
         </div>
-        <div class="text__container">
-          <p class="text__xlarge">Text extra-large</p>
-          <p class="text__large">Text large</p>
-          <p class="text__medium">Text medium</p>
-          <p class="text__small">Text small</p>
-          <p class="text__xsmall">Text extra-small</p>
-        </div>
-        <div class="text__container">
-          <p class="light text__medium">light</p>
-          <p class="regular text__medium">regular</p>
-          <p class="semibold text__medium">semibold</p>
-          <p class="bold text__medium">bold</p>
-          <p class="x-bold text__medium">Extra bold</p>
-        </div>
-        <div class="text__container">
-          <p class="italic text__medium">italics</p>
-          <p class="underline text__medium">underline</p>
-        </div>
-        <div class="text__container">
-          <p class="text-align--left text__medium">left-aligned</p>
-          <p class="text-align--center text__medium">center-aligned</p>
-          <p class="text-align--right text__medium">right-aligned</p>
-        </div>
-        <div class="text__container">
-          <p class="word-space--normal text__medium">normal word spacing</p>
-          <p class="word-space--more text__medium">more word spacing</p>
-        </div>
-        <div class="text__container">
-          <p class="letter-space--normal text__medium">normal letter spacing</p>
-          <p class="letter-space--more text__medium">more letter spacing</p>
+        <div class="secondary__font">
+          <p class="documentation"><a href="https://fonts.google.com/specimen/Montserrat">Secondary Font :
+              Montserrat</a>
+          </p>
+          <div class="text__container">
+            <h1 class="heading1">Heading 1</h1>
+            <h2 class="heading2">Heading 2</h2>
+            <h3 class="heading3">Heading 3</h3>
+            <h4 class="heading4">Heading 4</h4>
+            <h5 class="heading5">Heading 5</h5>
+          </div>
+          <div class="text__container">
+            <p class="text__xlarge">Text extra-large</p>
+            <p class="text__large">Text large</p>
+            <p class="text__medium">Text medium</p>
+            <p class="text__small">Text small</p>
+            <p class="text__xsmall">Text extra-small</p>
+          </div>
+          <div class="text__container">
+            <p class="light text__medium">light</p>
+            <p class="regular text__medium">regular</p>
+            <p class="semibold text__medium">semibold</p>
+            <p class="bold text__medium">bold</p>
+            <p class="x-bold text__medium">Extra bold</p>
+          </div>
+          <div class="text__container">
+            <p class="italic text__medium">italics</p>
+            <p class="underline text__medium">underline</p>
+          </div>
+          <div class="text__container">
+            <p class="text-align--left text__medium">left-aligned</p>
+            <p class="text-align--center text__medium">center-aligned</p>
+            <p class="text-align--right text__medium">right-aligned</p>
+          </div>
+          <div class="text__container">
+            <p class="word-space--normal text__medium">normal word spacing</p>
+            <p class="word-space--more text__medium">more word spacing</p>
+          </div>
+          <div class="text__container">
+            <p class="letter-space--normal text__medium">normal letter spacing</p>
+            <p class="letter-space--more text__medium">more letter spacing</p>
+          </div>
+<pre class="docs__code"><code class="language-html">
+  &ltdiv class="secondary__font">
+  &ltdiv class="text__container">
+    &lth1 class="heading1">Heading 1&lt/h1>
+    &lth2 class="heading2">Heading 2&lt/h2>
+    &lth3 class="heading3">Heading 3&lt/h3>
+    &lth4 class="heading4">Heading 4&lt/h4>
+    &lth5 class="heading5">Heading 5&lt/h5>
+  &lt/div>
+  &ltdiv class="text__container">
+    &ltp class="text__xlarge">Text extra-large&lt/p>
+    &ltp class="text__large">Text large&lt/p>
+    &ltp class="text__medium">Text medium&lt/p>
+    &ltp class="text__small">Text small&lt/p>
+    &ltp class="text__xsmall">Text extra-small&lt/p>
+  &lt/div>
+  &ltdiv class="text__container">
+    &ltp class="light text__medium">light&lt/p>
+    &ltp class="regular text__medium">regular&lt/p>
+    &ltp class="semibold text__medium">semibold&lt/p>
+    &ltp class="bold text__medium">bold&lt/p>
+    &ltp class="x-bold text__medium">Extra bold&lt/p>
+  &lt/div>
+  &ltdiv class="text__container">
+    &ltp class="italic text__medium">italics&lt/p>
+    &ltp class="underline text__medium">underline&lt/p>
+  &lt/div>
+  &ltdiv class="text__container">
+    &ltp class="text-align--left text__medium">left-aligned&lt/p>
+    &ltp class="text-align--center text__medium">center-aligned&lt/p>
+    &ltp class="text-align--right text__medium">right-aligned&lt/p>
+  &lt/div>
+  &ltdiv class="text__container">
+    &ltp class="word-space--normal text__medium">normal word spacing&lt/p>
+    &ltp class="word-space--more text__medium">more word spacing&lt/p>
+  &lt/div>
+  &ltdiv class="text__container">
+    &ltp class="letter-space--normal text__medium">normal letter spacing&lt/p>
+    &ltp class="letter-space--more text__medium">more letter spacing&lt/p>
+  &lt/div>
+  &lt/div>
+            </code></pre>
         </div>
       </div>
     </div>
   </div>
+  <script src="/documentation/prism.js"></script>
 </body>
 
 </html>

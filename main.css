@@ -31,6 +31,7 @@
   --secondary-color: #b8b8ff;
   --tertiary-color: #f7b801;
   --hover-color: #f1f1ff;
+  --background-color: #efefef;
 
   --online-color: #01af0f;
   --offline-color: #808080;
@@ -79,7 +80,8 @@ h1,
 h2,
 h3,
 h4,
-h5, p,
+h5,
+p,
 input {
   padding: 0;
   margin: 0;
@@ -153,6 +155,37 @@ nav li:hover {
   font-size: 2rem;
   padding: 2rem;
   font-family: var(--secondary-font-family);
+}
+
+.page__container {
+  width: 100%;
+  height: fit-content;
+}
+
+.components__sidebar {
+  width: 25rem;
+  height: 91vh;
+  align-self: start;
+  overflow-y: scroll;
+}
+
+.component__container{
+  gap: 1rem;
+  padding: 2rem;
+  align-items: center;
+  flex-grow: 1;
+  height: 84vh;
+  overflow-y: scroll;
+  background-color: var(--background-color);
+}
+
+.sidebar__option {
+  padding-left: 20%;
+}
+
+.option--selected {
+  background-color: var(--hover-color);
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 470px) {

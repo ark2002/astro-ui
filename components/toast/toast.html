@@ -29,24 +29,72 @@
             </ul>
         </nav>
     </header>
-    <div class="toast__demo flex--column">
-        <div class="page__header">
-            <h1 class="primary__font heading1 text-align--center">Toast</h1>
-            <p class="secondary__font">Display a notification message globally.</p>
-        </div>
+    <div class="page__container flex--row" id="background">
+        <nav class="components__sidebar flex--column">
+            <li class="sidebar__option"><a href="/components/alert/alert.html">
+                    <p class="primary__font text__small">Alerts</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/avatar/avatar.html">
+                    <p class="primary__font text__small">Avatars</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/badge/badge.html">
+                    <p class="primary__font text__small">Badges</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/button/button.html">
+                    <p class="primary__font text__small">Buttons</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/card/card.html">
+                    <p class="primary__font text__small">Cards</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/image/image.html">
+                    <p class="primary__font text__small">Images</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/input/input.html">
+                    <p class="primary__font text__small">Inputs</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/navbar/navbar.html">
+                    <p class="primary__font text__small">Navigation</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/rating/rating.html">
+                    <p class="primary__font text__small">Rating</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/typography/typography.html">
+                    <p class="primary__font text__small">Typography</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/slider/slider.html">
+                    <p class="primary__font text__small">Slider</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/grid/grid.html">
+                    <p class="primary__font text__small">Grids</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/lists/lists.html">
+                    <p class="primary__font text__small">Lists</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/modal/modal.html">
+                    <p class="primary__font text__small">Modal</p>
+                </a></li>
+            <li class="sidebar__option option--selected"><a href="/components/toast/toast.html">
+                    <p class="primary__font text__small">Toast</p>
+                </a></li>
+        </nav>
+        <div class="component__container flex--column">
+            <div class="page__header">
+                <h1 class="primary__font heading1 text-align--center">Toast</h1>
+                <p class="secondary__font">Display a notification message globally.</p>
+            </div>
 
-        <p class="documentation">Success Toast</p>
-        <button class="btn btn-color--primary btn-font--secondary text__small" id="success-toast-demo-btn">
-            Demo
-        </button>
+            <p class="documentation">Success Toast</p>
+            <button class="btn btn-color--primary btn-font--secondary text__small" id="success-toast-demo-btn">
+                Demo
+            </button>
 
-        <div class="success__toast secondary__font flex--row text__small">
-            <span class="material-icons">check_circle</span>
-            <p>Upload Successful</p>
-            <span class="material-icons toast__close">close</span>
-        </div>
+            <div class="success__toast secondary__font flex--row text__small">
+                <span class="material-icons">check_circle</span>
+                <p>Upload Successful</p>
+                <span class="material-icons toast__close">close</span>
+            </div>
 
-        <pre class="docs__code"><code class="language-html">
+            <pre class="docs__code"><code class="language-html">
 &ltdiv class="success__toast secondary__font flex--row text__small">
     &ltspan class="material-icons">check_circle&lt/span>
     &ltp>Upload Successful&lt/p>
@@ -54,18 +102,18 @@
 &lt/div>
         </code></pre>
 
-        <p class="documentation">Error Toast</p>
-        <button class="btn btn-color--primary btn-font--secondary text__small" id="error-toast-demo-btn">
-            Demo
-        </button>
+            <p class="documentation">Error Toast</p>
+            <button class="btn btn-color--primary btn-font--secondary text__small" id="error-toast-demo-btn">
+                Demo
+            </button>
 
-        <div class="error__toast secondary__font flex--row text__small">
-            <span class="material-icons">error</span>
-            <p>Error Try Again!</p>
-            <span class="material-icons toast__close">close</span>
-        </div>
+            <div class="error__toast secondary__font flex--row text__small">
+                <span class="material-icons">error</span>
+                <p>Error Try Again!</p>
+                <span class="material-icons toast__close">close</span>
+            </div>
 
-        <pre class="docs__code"><code class="language-html">
+            <pre class="docs__code"><code class="language-html">
 &ltdiv class="error__toast secondary__font flex--row text__small">
     &ltspan class="material-icons">check_circle&lt/span>
     &ltp>Error Try Again!&lt/p>
@@ -73,6 +121,7 @@
 &lt/div>
         </code></pre>
 
+        </div>
     </div>
     <div class="flex--column toast--demo__container">
         <div class="toast success__toast secondary__font flex--row text__small display--none" id="success-toast">

@@ -29,47 +29,95 @@
       </ul>
     </nav>
   </header>
-  <div class="alert__demo flex--column">
-    <div class="page__header">
-      <h1 class="primary__font heading1 text-align--center">Alerts</h1>
-      <p class="secondary__font">Alert informs users about important events.</p>
-    </div>
-    <p class="documentation">Basic Alerts</p>
-    <div class="alert alert--info flex--row">
-      <span class="material-icons alert__icon">info</span>
-      <div class="alert__copy flex--column">
-        <strong class="alert__title">Info Alert</strong>
-        <p class="alert__subtitle display--none"></p>
+  <div class="page__container flex--row">
+    <nav class="components__sidebar flex--column">
+      <li class="sidebar__option option--selected"><a href="/components/alert/alert.html">
+          <p class="primary__font text__small">Alerts</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/avatar/avatar.html">
+          <p class="primary__font text__small">Avatars</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/badge/badge.html">
+          <p class="primary__font text__small">Badges</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/button/button.html">
+          <p class="primary__font text__small">Buttons</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/card/card.html">
+          <p class="primary__font text__small">Cards</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/image/image.html">
+          <p class="primary__font text__small">Images</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/input/input.html">
+          <p class="primary__font text__small">Inputs</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/navbar/navbar.html">
+          <p class="primary__font text__small">Navigation</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/rating/rating.html">
+          <p class="primary__font text__small">Rating</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/typography/typography.html">
+          <p class="primary__font text__small">Typography</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/slider/slider.html">
+          <p class="primary__font text__small">Slider</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/grid/grid.html">
+          <p class="primary__font text__small">Grids</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/lists/lists.html">
+          <p class="primary__font text__small">Lists</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/modal/modal.html">
+          <p class="primary__font text__small">Modal</p>
+        </a></li>
+      <li class="sidebar__option"><a href="/components/toast/toast.html">
+          <p class="primary__font text__small">Toast</p>
+        </a></li>
+    </nav>
+    <div class="component__container flex--column">
+      <div class="page__header">
+        <h1 class="primary__font heading1 text-align--center">Alerts</h1>
+        <p class="secondary__font">Alert informs users about important events.</p>
       </div>
-    </div>
-    <div class="alert alert--success flex--row">
-      <span class="material-icons alert__icon">check_circle</span>
-      <div class="alert__copy flex--column">
-        <strong class="alert__title">Success Alert</strong>
-        <p class="alert__subtitle display--none"></p>
+      <p class="documentation">Basic Alerts</p>
+      <div class="alert alert--info flex--row">
+        <span class="material-icons alert__icon">info</span>
+        <div class="alert__copy flex--column">
+          <strong class="alert__title">Info Alert</strong>
+          <p class="alert__subtitle display--none"></p>
+        </div>
       </div>
-    </div>
-    <div class="alert alert--warning flex--row">
-      <span class="material-icons alert__icon">warning</span>
-      <div class="alert__copy flex--column">
-        <strong class="alert__title">Warning Alert</strong>
-        <p class="alert__subtitle">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-          maiores.
-        </p>
+      <div class="alert alert--success flex--row">
+        <span class="material-icons alert__icon">check_circle</span>
+        <div class="alert__copy flex--column">
+          <strong class="alert__title">Success Alert</strong>
+          <p class="alert__subtitle display--none"></p>
+        </div>
       </div>
-    </div>
-    <div class="alert alert--error flex--row">
-      <span class="material-icons alert__icon">error</span>
-      <div class="alert__copy flex--column">
-        <strong class="alert__title">Error Alert</strong>
-        <p class="alert__subtitle">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
-          non?
-        </p>
+      <div class="alert alert--warning flex--row">
+        <span class="material-icons alert__icon">warning</span>
+        <div class="alert__copy flex--column">
+          <strong class="alert__title">Warning Alert</strong>
+          <p class="alert__subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+            maiores.
+          </p>
+        </div>
       </div>
-    </div>
-    <pre class="docs__code"><code class="language-html">&ltdiv class="alert alert--info flex--row"&gt
+      <div class="alert alert--error flex--row">
+        <span class="material-icons alert__icon">error</span>
+        <div class="alert__copy flex--column">
+          <strong class="alert__title">Error Alert</strong>
+          <p class="alert__subtitle">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
+            non?
+          </p>
+        </div>
+      </div>
+      <pre class="docs__code"><code class="language-html">&ltdiv class="alert alert--info flex--row"&gt
   &ltspan class="material-icons alert__icon"&gtinfo&lt/span&gt
   &ltdiv class="alert__copy flex--column"&gt
     &ltstrong class="alert__title"&gtInfo Alert&lt/strong&gt
@@ -93,46 +141,46 @@
     &lt/p&gt
   &lt/div&gt
 &lt/div&gt</code></pre>
-    <p class="documentation">Closeable Alerts</p>
-    <div class="alert alert--info alert--closeable flex--row">
-      <span class="material-icons alert__icon">info</span>
-      <div class="alert__copy flex--column">
-        <strong class="alert__title">Info Alert with close</strong>
-        <p class="alert__subtitle display--none"></p>
+      <p class="documentation">Closeable Alerts</p>
+      <div class="alert alert--info alert--closeable flex--row">
+        <span class="material-icons alert__icon">info</span>
+        <div class="alert__copy flex--column">
+          <strong class="alert__title">Info Alert with close</strong>
+          <p class="alert__subtitle display--none"></p>
+        </div>
+        <span class="material-icons alert__close" title="close">close</span>
       </div>
-      <span class="material-icons alert__close" title="close">close</span>
-    </div>
-    <div class="alert alert--success alert--closeable flex--row">
-      <span class="material-icons alert__icon">check_circle</span>
-      <div class="alert__copy flex--column">
-        <strong class="alert__title">Success Alert with close</strong>
-        <p class="alert__subtitle display--none"></p>
+      <div class="alert alert--success alert--closeable flex--row">
+        <span class="material-icons alert__icon">check_circle</span>
+        <div class="alert__copy flex--column">
+          <strong class="alert__title">Success Alert with close</strong>
+          <p class="alert__subtitle display--none"></p>
+        </div>
+        <span class="material-icons alert__close" title="close">close</span>
       </div>
-      <span class="material-icons alert__close" title="close">close</span>
-    </div>
-    <div class="alert alert--warning alert--closeable flex--row">
-      <span class="material-icons alert__icon">warning</span>
-      <div class="alert__copy flex--column">
-        <strong class="alert__title">Warning Alert with close</strong>
-        <p class="alert__subtitle">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-          maiores.
-        </p>
+      <div class="alert alert--warning alert--closeable flex--row">
+        <span class="material-icons alert__icon">warning</span>
+        <div class="alert__copy flex--column">
+          <strong class="alert__title">Warning Alert with close</strong>
+          <p class="alert__subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+            maiores.
+          </p>
+        </div>
+        <span class="material-icons alert__close" title="close">close</span>
       </div>
-      <span class="material-icons alert__close" title="close">close</span>
-    </div>
-    <div class="alert alert--error alert--closeable flex--row">
-      <span class="material-icons alert__icon">error</span>
-      <div class="alert__copy flex--column">
-        <strong class="alert__title">Error Alert with close</strong>
-        <p class="alert__subtitle">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
-          non?
-        </p>
+      <div class="alert alert--error alert--closeable flex--row">
+        <span class="material-icons alert__icon">error</span>
+        <div class="alert__copy flex--column">
+          <strong class="alert__title">Error Alert with close</strong>
+          <p class="alert__subtitle">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam,
+            non?
+          </p>
+        </div>
+        <span class="material-icons alert__close" title="close">close</span>
       </div>
-      <span class="material-icons alert__close" title="close">close</span>
-    </div>
-    <pre class="docs__code"><code class="language-html">&ltdiv class="alert alert--info alert--closeable flex--row"&gt
+      <pre class="docs__code"><code class="language-html">&ltdiv class="alert alert--info alert--closeable flex--row"&gt
   &ltspan class="material-icons alert__icon"&gtinfo&lt/span&gt
   &ltdiv class="alert__copy flex--column"&gt
     &ltstrong class="alert__title"&gtInfo Alert with close&lt/strong&gt
@@ -170,6 +218,7 @@
   &lt/div&gt
   &ltspan class="material-icons alert__close" title="close"&gtclose&lt/span&gt
 &lt/div&gt</code></pre>
+    </div>
   </div>
   <script src="/documentation/prism.js"></script>
 </body>
