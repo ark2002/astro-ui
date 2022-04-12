@@ -29,37 +29,85 @@
             </ul>
         </nav>
     </header>
-    <div class="page__container flex--column">
-        <div class="page__header">
-            <h1 class="primary__font heading1 text-align--center">Slider</h1>
-            <p class="secondary__font">Sliders allow users to make selections from a range of values.
-            </p>
-        </div>
-        <div class="slider__wrapper">
-            <header>
-                <h3 class="heading3 secondary__font">Price Range</h3>
-                <p class="text__small secondary__font">Use slider or enter min and max price</p>
-            </header>
-            <div class="slider__inputs flex--row">
-                <div class="input__field flex--row">
-                    <span class="secondary__font">Min</span>
-                    <input type="number" class="input-min" value="2500">
+    <div class="page__container flex--row" id="background">
+        <nav class="components__sidebar flex--column">
+            <li class="sidebar__option"><a href="/components/alert/alert.html">
+                    <p class="primary__font text__small">Alerts</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/avatar/avatar.html">
+                    <p class="primary__font text__small">Avatars</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/badge/badge.html">
+                    <p class="primary__font text__small">Badges</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/button/button.html">
+                    <p class="primary__font text__small">Buttons</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/card/card.html">
+                    <p class="primary__font text__small">Cards</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/image/image.html">
+                    <p class="primary__font text__small">Images</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/input/input.html">
+                    <p class="primary__font text__small">Inputs</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/navbar/navbar.html">
+                    <p class="primary__font text__small">Navigation</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/rating/rating.html">
+                    <p class="primary__font text__small">Rating</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/typography/typography.html">
+                    <p class="primary__font text__small">Typography</p>
+                </a></li>
+            <li class="sidebar__option option--selected"><a href="/components/slider/slider.html">
+                    <p class="primary__font text__small">Slider</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/grid/grid.html">
+                    <p class="primary__font text__small">Grids</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/lists/lists.html">
+                    <p class="primary__font text__small">Lists</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/modal/modal.html">
+                    <p class="primary__font text__small">Modal</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/toast/toast.html">
+                    <p class="primary__font text__small">Toast</p>
+                </a></li>
+        </nav>
+        <div class="component__container flex--column">
+            <div class="page__header">
+                <h1 class="primary__font heading1 text-align--center">Slider</h1>
+                <p class="secondary__font">Sliders allow users to make selections from a range of values.
+                </p>
+            </div>
+            <div class="slider__wrapper">
+                <header>
+                    <h3 class="heading3 secondary__font">Price Range</h3>
+                    <p class="text__small secondary__font">Use slider or enter min and max price</p>
+                </header>
+                <div class="slider__inputs flex--row">
+                    <div class="input__field flex--row">
+                        <span class="secondary__font">Min</span>
+                        <input type="number" class="input-min" value="2500">
+                    </div>
+                    <div class="separator flex--row">-</div>
+                    <div class="input__field flex--row">
+                        <span class="secondary__font">Max</span>
+                        <input type="number" class="input-max" value="7500">
+                    </div>
                 </div>
-                <div class="separator flex--row">-</div>
-                <div class="input__field flex--row">
-                    <span class="secondary__font">Max</span>
-                    <input type="number" class="input-max" value="7500">
+                <div class="slider">
+                    <div class="progress"></div>
+                </div>
+                <div class="range-input">
+                    <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                    <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
                 </div>
             </div>
-            <div class="slider">
-                <div class="progress"></div>
-            </div>
-            <div class="range-input">
-                <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-            </div>
-        </div>
-        <pre class="docs__code"><code class="language-html">&ltdiv class="slider__wrapper"&gt
+            <pre class="docs__code"><code class="language-html">&ltdiv class="slider__wrapper"&gt
         &ltheader&gt
         &lth3 class="heading3 secondary__font"&gtPrice Range&lt/h3&gt
         &ltp class="text__small secondary__font"&gtUse slider or enter min and max price&lt/p&gt
@@ -83,9 +131,10 @@
         &ltinput type="range" class="range-max" min="0" max="10000" value="7500" step="100"&gt
     &lt/div&gt
 &lt/div&gt</code></pre>
+        </div>
     </div>
-    <script src="slider.js"></script>
-    <script src="/documentation/prism.js"></script>
+        <script src="slider.js"></script>
+        <script src="/documentation/prism.js"></script>
 </body>
 
 </html>

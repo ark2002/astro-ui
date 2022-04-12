@@ -104,3 +104,7 @@
 .letter-space--more {
     letter-spacing: 1rem;
 }
+
+.typography__wrapper .docs__code{
+    width: fit-content;
+}

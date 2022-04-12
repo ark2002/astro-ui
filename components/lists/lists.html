@@ -29,20 +29,68 @@
             </ul>
         </nav>
     </header>
-    <div class="list__demo flex--column">
-        <div class="page__header">
-            <h1 class="primary__font heading1 text-align--center">Lists</h1>
-            <p class="secondary__font">Lists are continuous, vertical indexes of text or images.</p>
-        </div>
-        <p class="documentation">Stacked List</p>
-        <ul class="stacked__list secondary__font text__small flex--column">
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-        </ul>
-        <pre class="docs__code"><code class="language-html">
+    <div class="page__container flex--row">
+        <nav class="components__sidebar flex--column">
+            <li class="sidebar__option"><a href="/components/alert/alert.html">
+                    <p class="primary__font text__small">Alerts</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/avatar/avatar.html">
+                    <p class="primary__font text__small">Avatars</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/badge/badge.html">
+                    <p class="primary__font text__small">Badges</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/button/button.html">
+                    <p class="primary__font text__small">Buttons</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/card/card.html">
+                    <p class="primary__font text__small">Cards</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/image/image.html">
+                    <p class="primary__font text__small">Images</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/input/input.html">
+                    <p class="primary__font text__small">Inputs</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/navbar/navbar.html">
+                    <p class="primary__font text__small">Navigation</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/rating/rating.html">
+                    <p class="primary__font text__small">Rating</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/typography/typography.html">
+                    <p class="primary__font text__small">Typography</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/slider/slider.html">
+                    <p class="primary__font text__small">Slider</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/grid/grid.html">
+                    <p class="primary__font text__small">Grids</p>
+                </a></li>
+            <li class="sidebar__option option--selected"><a href="/components/lists/lists.html">
+                    <p class="primary__font text__small">Lists</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/modal/modal.html">
+                    <p class="primary__font text__small">Modal</p>
+                </a></li>
+            <li class="sidebar__option"><a href="/components/toast/toast.html">
+                    <p class="primary__font text__small">Toast</p>
+                </a></li>
+        </nav>
+        <div class="component__container flex--column">
+            <div class="page__header">
+                <h1 class="primary__font heading1 text-align--center">Lists</h1>
+                <p class="secondary__font">Lists are continuous, vertical indexes of text or images.</p>
+            </div>
+            <p class="documentation">Stacked List</p>
+            <ul class="stacked__list secondary__font text__small flex--column">
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+            </ul>
+            <pre class="docs__code"><code class="language-html">
 &ltul class="stacked__list secondary__font text__small flex--column">
         &ltli>List Item&lt/li>
         &ltli>List Item&lt/li>
@@ -51,15 +99,15 @@
         &ltli>List Item&lt/li>
 &lt/ul>
 </code></pre>
-        <p class="documentation">Spaced List</p>
-        <ul class="spaced__list secondary__font text__small flex--column">
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-            <li>List Item</li>
-        </ul>
-        <pre class="docs__code"><code class="language-html">
+            <p class="documentation">Spaced List</p>
+            <ul class="spaced__list secondary__font text__small flex--column">
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+            </ul>
+            <pre class="docs__code"><code class="language-html">
 &ltul class="stacked__list secondary__font text__small flex--column">
     &ltli>List Item&lt/li>
     &ltli>List Item&lt/li>
@@ -68,22 +116,22 @@
     &ltli>List Item&lt/li>
 &lt/ul>
         </code></pre>
-        <p class="documentation">Notifications List</p>
-        <ul class="notifications__list">
-            <li class="notifications__list-item flex--row">
-                <img src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
-                <p class="secondary__font text__small"><b>Title: </b>Notified rn</p>
-            </li>
-            <li class="notifications__list-item flex--row">
-                <img src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
-                <p class="secondary__font text__small"><b>Title: </b>Notified rn</p>
-            </li>
-            <li class="notifications__list-item flex--row">
-                <img src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
-                <p class="secondary__font text__small"><b>Title: </b>Notified rn</p>
-            </li>
-        </ul>
-<pre class="docs__code"><code class="language-html">
+            <p class="documentation">Notifications List</p>
+            <ul class="notifications__list">
+                <li class="notifications__list-item flex--row">
+                    <img src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
+                    <p class="secondary__font text__small"><b>Title: </b>Notified rn</p>
+                </li>
+                <li class="notifications__list-item flex--row">
+                    <img src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
+                    <p class="secondary__font text__small"><b>Title: </b>Notified rn</p>
+                </li>
+                <li class="notifications__list-item flex--row">
+                    <img src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
+                    <p class="secondary__font text__small"><b>Title: </b>Notified rn</p>
+                </li>
+            </ul>
+            <pre class="docs__code"><code class="language-html">
 &ltul class="notifications__list">
         &ltli class="notifications__list-item flex--row">
             &ltimg src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
@@ -99,6 +147,7 @@
         &lt/li>
 &lt/ul>
 </code></pre>
+        </div>
     </div>
     <script src="/documentation/prism.js"></script>
 </body>
