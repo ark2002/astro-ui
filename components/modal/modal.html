@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/main.css" />
     <link rel="stylesheet" href="/documentation/prism.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <title>Slider | Astro UI</title>
+    <title>Modal | Astro UI</title>
 </head>
 
 <body>
@@ -61,7 +61,7 @@
             <li class="sidebar__option"><a href="/components/typography/typography.html">
                     <p class="primary__font text__small">Typography</p>
                 </a></li>
-            <li class="sidebar__option option--selected"><a href="/components/slider/slider.html">
+            <li class="sidebar__option"><a href="/components/slider/slider.html">
                     <p class="primary__font text__small">Slider</p>
                 </a></li>
             <li class="sidebar__option"><a href="/components/grid/grid.html">
@@ -70,7 +70,7 @@
             <li class="sidebar__option"><a href="/components/lists/lists.html">
                     <p class="primary__font text__small">Lists</p>
                 </a></li>
-            <li class="sidebar__option"><a href="/components/modal/modal.html">
+            <li class="sidebar__option option--selected"><a href="/components/modal/modal.html">
                     <p class="primary__font text__small">Modal</p>
                 </a></li>
             <li class="sidebar__option"><a href="/components/toast/toast.html">
@@ -79,62 +79,93 @@
         </nav>
         <div class="component__container flex--column">
             <div class="page__header">
-                <h1 class="primary__font heading1 text-align--center">Slider</h1>
-                <p class="secondary__font">Sliders allow users to make selections from a range of values.
-                </p>
+                <h1 class="primary__font heading1 text-align--center">Modal</h1>
+                <p class="secondary__font">The modal component provides a solid foundation for creating dialogs,
+                    popovers,
+                    lightboxes, or whatever else.</p>
             </div>
-            <div class="slider__wrapper">
-                <header>
-                    <h3 class="heading3 secondary__font">Price Range</h3>
-                    <p class="text__small secondary__font">Use slider or enter min and max price</p>
-                </header>
-                <div class="slider__inputs flex--row">
-                    <div class="input__field flex--row">
-                        <span class="secondary__font">Min</span>
-                        <input type="number" class="input-min" value="2500">
-                    </div>
-                    <div class="separator flex--row">-</div>
-                    <div class="input__field flex--row">
-                        <span class="secondary__font">Max</span>
-                        <input type="number" class="input-max" value="7500">
-                    </div>
+
+            <p class="documentation">Alert Modal</p>
+            <button class="btn btn-color--primary btn-font--secondary text__small" id="alert-modal-demo-btn">
+                Demo
+            </button>
+
+            <div class="modal modal__alert secondary__font flex--column">
+                <h1 class="modal__alert__title text__small">This is a Title</h1>
+                <p class="modal__alert__subtitle text__small">This is subtitle</p>
+            </div>
+
+            <pre class="docs__code"><code class="language-html">
+&ltdiv class="modal modal__alert secondary__font flex--column" id="alert-modal-demo">
+    &lth1 class="modal__alert__title text__small">This is a Title&lt/h1>
+    &ltp class="modal__alert__subtitle text__small">This is subtitle&lt/p>
+&lt/div>
+        </code></pre>
+
+            <p class="documentation">Choice Modal</p>
+            <button class="btn btn-color--primary btn-font--secondary text__small" id="choice-modal-demo-btn">
+                Demo
+            </button>
+
+            <div class="modal modal__choice secondary__font flex--column">
+                <div class="modal__choice__header">
+                    <h1 class="modal__choice__title text__small">This is a Title</h1>
+                    <p class="modal__choice__subtitle text__small">This is subtitle</p>
                 </div>
-                <div class="slider">
-                    <div class="progress"></div>
-                </div>
-                <div class="range-input">
-                    <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                    <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                <div class="modal__choice__actions">
+                    <button class="btn btn-color--primary btn-font--secondary text__small">
+                        Button 1
+                    </button>
+                    <button class="btn btn-color--primary btn-font--secondary text__small">
+                        Button 2
+                    </button>
                 </div>
             </div>
-            <pre class="docs__code"><code class="language-html">&ltdiv class="slider__wrapper"&gt
-        &ltheader&gt
-        &lth3 class="heading3 secondary__font"&gtPrice Range&lt/h3&gt
-        &ltp class="text__small secondary__font"&gtUse slider or enter min and max price&lt/p&gt
-    &lt/header&gt
-    &ltdiv class="slider__inputs flex--row"&gt
-        &ltdiv class="input__field flex--row"&gt
-            &ltspan class="secondary__font"&gtMin&lt/span&gt
-            &ltinput type="number" class="input-min" value="2500"&gt
-        &lt/div&gt
-        &ltdiv class="separator flex--row"&gt-&lt/div&gt
-        &ltdiv class="input__field flex--row"&gt
-            &ltspan class="secondary__font"&gtMax&lt/span&gt
-            &ltinput type="number" class="input-max" value="7500"&gt
-        &lt/div&gt
-    &lt/div&gt
-    &ltdiv class="slider"&gt
-        &ltdiv class="progress"&gt&lt/div&gt
-    &lt/div&gt
-    &ltdiv class="range-input"&gt
-        &ltinput type="range" class="range-min" min="0" max="10000" value="2500" step="100"&gt
-        &ltinput type="range" class="range-max" min="0" max="10000" value="7500" step="100"&gt
-    &lt/div&gt
-&lt/div&gt</code></pre>
+
+            <pre class="docs__code"><code class="language-html">
+&ltdiv class="modal modal__choice secondary__font flex--column">
+    &ltdiv class="modal__choice__header">
+        &lth1 class="modal__choice__title text__small">This is a Title&lt/h1>
+        &ltp class="modal__choice__subtitle text__small">This is subtitle&lt/p>
+    &lt/div>
+    &ltdiv class="modal__choice__actions">
+        &ltbutton class="btn btn-color--primary btn-font--secondary text__small">
+            Button 1
+        &lt/button>
+        &ltbutton class="btn btn-color--primary btn-font--secondary text__small">
+            Button 2
+        &lt/button>
+    &lt/div>
+&lt/div>  
+        </code></pre>
+
         </div>
-    </div>
-        <script src="slider.js"></script>
+        </div>
+
+        <div class="modal modal__alert modal--positioned display--none secondary__font flex--column"
+            id="alert-modal-demo" tabindex="0">
+            <h1 class="modal__alert__title text__small">This is a Title</h1>
+            <p class="modal__alert__subtitle text__small">This is subtitle</p>
+        </div>
+
+        <div class="modal modal__choice modal--positioned secondary__font display--none flex--column"
+            id="choice-modal-demo" tabindex="0">
+            <div class="modal__choice__header">
+                <h1 class="modal__choice__title text__small">This is a Title</h1>
+                <p class="modal__choice__subtitle text__small">This is subtitle</p>
+            </div>
+            <div class="modal__choice__actions">
+                <button class="btn btn-color--primary btn-font--secondary text__small">
+                    Button 1
+                </button>
+                <button class="btn btn-color--primary btn-font--secondary text__small">
+                    Button 2
+                </button>
+            </div>
+        </div>
+
         <script src="/documentation/prism.js"></script>
+        <script src="./modal.js"></script>
 </body>
 
 </html>

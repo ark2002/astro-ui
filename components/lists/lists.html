@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="/main.css" />
     <link rel="stylesheet" href="/documentation/prism.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
-    <title>Slider | Astro UI</title>
+    <title>Lists | Astro UI</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
             </ul>
         </nav>
     </header>
-    <div class="page__container flex--row" id="background">
+    <div class="page__container flex--row">
         <nav class="components__sidebar flex--column">
             <li class="sidebar__option"><a href="/components/alert/alert.html">
                     <p class="primary__font text__small">Alerts</p>
@@ -61,13 +61,13 @@
             <li class="sidebar__option"><a href="/components/typography/typography.html">
                     <p class="primary__font text__small">Typography</p>
                 </a></li>
-            <li class="sidebar__option option--selected"><a href="/components/slider/slider.html">
+            <li class="sidebar__option"><a href="/components/slider/slider.html">
                     <p class="primary__font text__small">Slider</p>
                 </a></li>
             <li class="sidebar__option"><a href="/components/grid/grid.html">
                     <p class="primary__font text__small">Grids</p>
                 </a></li>
-            <li class="sidebar__option"><a href="/components/lists/lists.html">
+            <li class="sidebar__option option--selected"><a href="/components/lists/lists.html">
                     <p class="primary__font text__small">Lists</p>
                 </a></li>
             <li class="sidebar__option"><a href="/components/modal/modal.html">
@@ -79,62 +79,77 @@
         </nav>
         <div class="component__container flex--column">
             <div class="page__header">
-                <h1 class="primary__font heading1 text-align--center">Slider</h1>
-                <p class="secondary__font">Sliders allow users to make selections from a range of values.
-                </p>
+                <h1 class="primary__font heading1 text-align--center">Lists</h1>
+                <p class="secondary__font">Lists are continuous, vertical indexes of text or images.</p>
             </div>
-            <div class="slider__wrapper">
-                <header>
-                    <h3 class="heading3 secondary__font">Price Range</h3>
-                    <p class="text__small secondary__font">Use slider or enter min and max price</p>
-                </header>
-                <div class="slider__inputs flex--row">
-                    <div class="input__field flex--row">
-                        <span class="secondary__font">Min</span>
-                        <input type="number" class="input-min" value="2500">
-                    </div>
-                    <div class="separator flex--row">-</div>
-                    <div class="input__field flex--row">
-                        <span class="secondary__font">Max</span>
-                        <input type="number" class="input-max" value="7500">
-                    </div>
-                </div>
-                <div class="slider">
-                    <div class="progress"></div>
-                </div>
-                <div class="range-input">
-                    <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                    <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-                </div>
-            </div>
-            <pre class="docs__code"><code class="language-html">&ltdiv class="slider__wrapper"&gt
-        &ltheader&gt
-        &lth3 class="heading3 secondary__font"&gtPrice Range&lt/h3&gt
-        &ltp class="text__small secondary__font"&gtUse slider or enter min and max price&lt/p&gt
-    &lt/header&gt
-    &ltdiv class="slider__inputs flex--row"&gt
-        &ltdiv class="input__field flex--row"&gt
-            &ltspan class="secondary__font"&gtMin&lt/span&gt
-            &ltinput type="number" class="input-min" value="2500"&gt
-        &lt/div&gt
-        &ltdiv class="separator flex--row"&gt-&lt/div&gt
-        &ltdiv class="input__field flex--row"&gt
-            &ltspan class="secondary__font"&gtMax&lt/span&gt
-            &ltinput type="number" class="input-max" value="7500"&gt
-        &lt/div&gt
-    &lt/div&gt
-    &ltdiv class="slider"&gt
-        &ltdiv class="progress"&gt&lt/div&gt
-    &lt/div&gt
-    &ltdiv class="range-input"&gt
-        &ltinput type="range" class="range-min" min="0" max="10000" value="2500" step="100"&gt
-        &ltinput type="range" class="range-max" min="0" max="10000" value="7500" step="100"&gt
-    &lt/div&gt
-&lt/div&gt</code></pre>
+            <p class="documentation">Stacked List</p>
+            <ul class="stacked__list secondary__font text__small flex--column">
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+            </ul>
+            <pre class="docs__code"><code class="language-html">
+&ltul class="stacked__list secondary__font text__small flex--column">
+        &ltli>List Item&lt/li>
+        &ltli>List Item&lt/li>
+        &ltli>List Item&lt/li>
+        &ltli>List Item&lt/li>
+        &ltli>List Item&lt/li>
+&lt/ul>
+</code></pre>
+            <p class="documentation">Spaced List</p>
+            <ul class="spaced__list secondary__font text__small flex--column">
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+            </ul>
+            <pre class="docs__code"><code class="language-html">
+&ltul class="stacked__list secondary__font text__small flex--column">
+    &ltli>List Item&lt/li>
+    &ltli>List Item&lt/li>
+    &ltli>List Item&lt/li>
+    &ltli>List Item&lt/li>
+    &ltli>List Item&lt/li>
+&lt/ul>
+        </code></pre>
+            <p class="documentation">Notifications List</p>
+            <ul class="notifications__list">
+                <li class="notifications__list-item flex--row">
+                    <img src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
+                    <p class="secondary__font text__small"><b>Title: </b>Notified rn</p>
+                </li>
+                <li class="notifications__list-item flex--row">
+                    <img src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
+                    <p class="secondary__font text__small"><b>Title: </b>Notified rn</p>
+                </li>
+                <li class="notifications__list-item flex--row">
+                    <img src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
+                    <p class="secondary__font text__small"><b>Title: </b>Notified rn</p>
+                </li>
+            </ul>
+            <pre class="docs__code"><code class="language-html">
+&ltul class="notifications__list">
+        &ltli class="notifications__list-item flex--row">
+            &ltimg src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
+            &ltp class="secondary__font text__small">&ltb>Title: &lt/b>Notified rn&lt/p>
+        &lt/li>
+        &ltli class="notifications__list-item flex--row">
+            &ltimg src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
+            &ltp class="secondary__font text__small">&ltb>Title: &lt/b>Notified rn&lt/p>
+        &lt/li>
+        &ltli class="notifications__list-item flex--row">
+            &ltimg src="/assets/avatar.jpg" alt="notifications" class="avatar__img" />
+            &ltp class="secondary__font text__small">&ltb>Title: &lt/b>Notified rn&lt/p>
+        &lt/li>
+&lt/ul>
+</code></pre>
         </div>
     </div>
-        <script src="slider.js"></script>
-        <script src="/documentation/prism.js"></script>
+    <script src="/documentation/prism.js"></script>
 </body>
 
 </html>
